@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>龙岗区幼师面试备考 — 张某定制版</title>
+<style>
+  :root {
+    --primary: #4A90D9;
+    --primary-light: #E8F0FE;
+    --primary-dark: #2D5F8A;
+    --accent: #FF6B6B;
+    --accent-light: #FFE8E8;
+    --green: #52C41A;
+    --green-light: #F0FFF0;
+    --orange: #FA8C16;
+    --orange-light: #FFF7E6;
+    --purple: #722ED1;
+    --purple-light: #F0E8FF;
+    --teal: #13C2C2;
+    --teal-light: #E6FFFB;
+    --gold: #FAAD14;
+    --gold-light: #FFFBE6;
+    --gray: #666;
+    --gray-light: #f5f5f5;
+    --border: #e0e0e0;
+    --radius: 14px;
+    --radius-sm: 10px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.07);
+    --shadow-hover: 0 4px 20px rgba(0,0,0,0.12);
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    background: linear-gradient(180deg, #f0f2f5 0%, #e8ecf0 100%);
+    color: #333;
+    line-height: 1.8;
+    padding-bottom: 80px;
+    min-height: 100vh;
+  }
+
+  /* ===== Scrollbar ===== */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+
+  /* ===== Header ===== */
+  .header {
+    background: linear-gradient(135deg, #4A90D9 0%, #2D5F8A 50%, #1a3a5c 100%);
+    color: #fff;
+    padding: 28px 16px 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.05) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .header::after {
+    content: '✿ ✿ ✿';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 12px;
+    opacity: 0.3;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .header .subtitle {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 6px;
+    position: relative;
+  }
+  .header .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .header .badge-row span {
+    background: rgba(255,255,255,0.15);
+    padding: 2px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ===== Top Bar ===== */
+  .top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  }
+  .top-bar .stat {
+    font-size: 13px;
+    color: var(--gray);
+    flex: 1;
+    min-width: 80px;
+  }
+  .top-bar .stat strong { color: var(--primary); font-size: 16px; }
+  .btn-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .btn {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    font-family: var(--font);
+  }
+  .btn:active { transform: scale(0.95); }
+  .btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .btn-primary:hover { background: var(--primary-dark); }
+  .btn-danger { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  .progress-bar-bg {
+    width: 100%;
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    margin-top: 6px;
+    overflow: hidden;
+    flex-basis: 100%;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--green), #73d13d);
+    border-radius: 2px;
+    transition: width 0.5s ease;
+    width: 0%;
+  }
+
+  /* ===== Filter Tabs ===== */
+  .filter-tabs {
+    display: flex;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: sticky;
+    top: 52px;
+    z-index: 99;
+  }
+  .filter-tabs::-webkit-scrollbar { display: none; }
+  .filter-tabs .btn { flex-shrink: 0; }
+  .filter-tabs .btn-active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+
+  /* ===== Daily Motto ===== */
+  .daily-motto {
+    margin: 12px 16px;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #fff7e6 0%, #fffbe6 100%);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--gold);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow);
+  }
+  .daily-motto .motto-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+  .daily-motto .motto-text { flex: 1; }
+  .daily-motto .motto-text em { color: var(--gray); font-size: 12px; display: block; margin-top: 2px; }
+
+  /* ===== Section ===== */
+  .section {
+    margin: 12px 16px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+  }
+  .section:active { box-shadow: var(--shadow-hover); }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background 0.2s;
+  }
+  .section-header:active { background: var(--gray-light); }
+  .section-header h2 {
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-header .icon-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  .section-header .badge {
+    font-size: 11px;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 1px 12px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .section-header .toggle-icon {
+    font-size: 14px;
+    color: var(--gray);
+    transition: transform 0.3s;
+    background: var(--gray-light);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-header.collapsed .toggle-icon { transform: rotate(-90deg); }
+  .section-header.collapsed + .section-body { display: none; }
+
+  .section-body { padding: 0 18px 18px; }
+
+  /* ===== Section SVG Banner ===== */
+  .section-banner {
+    margin: 12px 18px 0;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  /* ===== Cards ===== */
+  .card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    margin-top: 12px;
+    overflow: hidden;
+    transition: all 0.25s ease;
+  }
+  .card:hover { border-color: var(--primary); }
+
+  .card-question {
+    padding: 14px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    -webkit-tap-highlight-color: transparent;
+    background: linear-gradient(135deg, #fafafa 0%, #f7f8fa 100%);
+    transition: background 0.2s;
+  }
+  .card-question:active { background: var(--primary-light); }
+  .card.open .card-question {
+    background: linear-gradient(135deg, var(--primary-light) 0%, #f0f5ff 100%);
+    border-bottom: 1px solid var(--border);
+  }
+  .card-question .q-num {
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 13px;
+    min-width: 24px;
+    height: 24px;
+    background: var(--primary-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .card-question .q-text {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  .card-question .q-arrow {
+    color: var(--gray);
+    font-size: 12px;
+    transition: transform 0.3s;
+    line-height: 1.7;
+    flex-shrink: 0;
+  }
+  .card.open .q-arrow { transform: rotate(180deg); }
+
+  .card-answer {
+    display: none;
+    padding: 0 16px 16px;
+    animation: fadeSlideIn 0.3s ease;
+  }
+  .card.open .card-answer { display: block; }
+
+  @keyframes fadeSlideIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .answer-section { margin-top: 14px; }
+  .answer-section .label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray);
+    display: block;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .answer-content {
+    font-size: 14px;
+    line-height: 2;
+    color: #444;
+    padding: 12px 16px;
+    background: #fafbfc;
+    border-radius: var(--radius-sm);
+    border-left: 3px solid var(--primary);
+  }
+  .answer-content .highlight {
+    background: linear-gradient(180deg, transparent 60%, #FFF3CD 60%);
+    padding: 0 4px;
+    font-weight: 500;
+  }
+
+  .keywords-box {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: var(--green-light);
+    border-radius: var(--radius-sm);
+    border: 1px solid #d9f7be;
+  }
+  .keywords-box .label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .keywords-box .tag {
+    display: inline-block;
+    background: #fff;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin: 2px 3px;
+    font-size: 12px;
+    border: 1px solid #b7eb8f;
+    color: #333;
+  }
+
+  .koujue-box {
+    margin-top: 8px;
+    padding: 12px 14px;
+    background: var(--orange-light);
+    border-radius: var(--radius-sm);
+    border: 1px solid #ffd591;
+  }
+  .koujue-box .label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--orange);
+    margin-bottom: 4px;
+    display: block;
+  }
+  .koujue-box .koujue-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--orange);
+    letter-spacing: 2px;
+  }
+  .koujue-box .koujue-desc {
+    font-size: 13px;
+    color: #555;
+    margin-top: 2px;
+  }
+
+  .progress-dot {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 3px;
+    transition: all 0.3s ease;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 11px;
+    color: transparent;
+  }
+  .progress-dot.done {
+    background: var(--green);
+    border-color: var(--green);
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(82, 196, 26, 0.3);
+  }
+  .progress-dot.done::after { content: '✓'; }
+
+  /* ===== Drawing Section ===== */
+  .drawing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .drawing-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    text-align: center;
+    transition: all 0.3s;
+    background: #fafafa;
+  }
+  .drawing-item:hover { border-color: var(--primary); box-shadow: 0 2px 8px rgba(74,144,217,0.12); }
+  .drawing-item .subject { font-weight: 700; font-size: 15px; color: var(--primary-dark); }
+  .drawing-item .desc { font-size: 12px; color: var(--gray); margin-top: 4px; }
+  .drawing-item .themes { font-size: 11px; color: var(--primary); margin-top: 6px; background: var(--primary-light); padding: 2px 8px; border-radius: 4px; display: inline-block; }
+
+  .timer-section {
+    margin-top: 16px;
+    padding: 16px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+  }
+  .timer-section .timer-label { font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+  .timer-display {
+    font-size: 40px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    font-family: var(--font);
+    text-align: center;
+    padding: 8px 0;
+    letter-spacing: 4px;
+  }
+  .timer-display.running { color: var(--green); }
+  .timer-display.over { color: var(--accent); animation: pulse 0.5s ease infinite alternate; }
+  @keyframes pulse { from { opacity: 1; } to { opacity: 0.5; } }
+
+  .timer-controls {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .timer-controls select {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-family: var(--font);
+    background: #fff;
+  }
+
+  /* ===== Frameworks ===== */
+  .fw-card {
+    margin-top: 14px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .fw-header {
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .fw-body { padding: 14px 16px; }
+
+  /* ===== Study Plan ===== */
+  .plan-grid { margin-top: 14px; }
+  .plan-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    transition: background 0.2s;
+    border-radius: 4px;
+  }
+  .plan-row:last-child { border-bottom: none; }
+  .plan-row:hover { background: #fafafa; }
+  .plan-row .time-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+  }
+  .plan-row .content { flex: 1; }
+  .plan-row .content .plan-title { font-weight: 500; }
+  .plan-row .content .plan-desc { font-size: 12px; color: var(--gray); }
+  .plan-row .duration {
+    color: var(--primary);
+    font-weight: 600;
+    min-width: 52px;
+    text-align: right;
+    font-size: 13px;
+    background: var(--primary-light);
+    padding: 2px 10px;
+    border-radius: 10px;
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    text-align: center;
+    padding: 32px 16px;
+    color: #999;
+    font-size: 13px;
+    line-height: 2;
+  }
+  .footer .footer-icon { font-size: 32px; display: block; margin-bottom: 8px; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 480px) {
+    .header h1 { font-size: 20px; }
+    .header .subtitle { font-size: 12px; }
+    .card-question .q-text { font-size: 14px; }
+    .answer-content { font-size: 13px; }
+    .drawing-grid { grid-template-columns: 1fr; }
+    .timer-display { font-size: 32px; }
+    .top-bar .stat { font-size: 12px; min-width: 60px; }
+    .btn { font-size: 11px; padding: 4px 10px; }
+    .daily-motto { font-size: 13px; padding: 12px 14px; }
+  }
+
+  @media (min-width: 768px) {
+    body { max-width: 800px; margin: 0 auto; }
+    .section { margin: 12px 0; }
+    .top-bar { padding: 10px 0; }
+    .filter-tabs { padding: 8px 0; }
+    .daily-motto { margin: 12px 0; }
+  }
+
+  @media print {
+    .top-bar, .filter-tabs, .btn-group, .progress-dot, .header, .daily-motto { display: none; }
+    .section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+    .card-answer { display: block !important; }
+    .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER -->
+<!-- ============================================================ -->
+<div class="header">
+  <h1>🍎 龙岗区幼师面试备考</h1>
+  <div class="subtitle">张某定制版 · 30道核心题 + 绘画 + 框架 + 每日计划</div>
+  <div class="badge-row">
+    <span>📖 10道理论题</span>
+    <span>🏛 10道时政题</span>
+    <span>🎨 绘画方案</span>
+    <span>🧩 答题框架</span>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TOP BAR -->
+<!-- ============================================================ -->
+<div class="top-bar">
+  <div class="stat">
+    📊 掌握进度 <strong id="progressCount">0</strong>/<strong id="totalCount">30</strong>
+    <span id="progressPct" style="color:#999;font-size:12px;">(0%)</span>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+  </div>
+  <div class="btn-group">
+    <button class="btn" id="expandAllBtn">📖 展开全部</button>
+    <button class="btn" id="collapseAllBtn">📕 收起全部</button>
+    <button class="btn btn-danger" id="resetProgressBtn">⟳ 重置</button>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FILTER TABS -->
+<!-- ============================================================ -->
+<div class="filter-tabs" id="filterTabs">
+  <button class="btn btn-active" data-filter="all">📚 全部</button>
+  <button class="btn" data-filter="theory">📖 理论题</button>
+  <button class="btn" data-filter="shizheng">🏛 时政题</button>
+  <button class="btn" data-filter="drawing">🎨 绘画</button>
+  <button class="btn" data-filter="framework">🧩 框架</button>
+  <button class="btn" data-filter="plan">📅 每日计划</button>
+</div>
+
+<!-- ============================================================ -->
+<!-- DAILY MOTTO -->
+<!-- ============================================================ -->
+<div class="daily-motto" id="dailyMotto">
+  <div class="motto-icon">💪</div>
+  <div class="motto-text">
+    <span id="mottoText">每天进步一点点，面试场上更自信！</span>
+    <em id="mottoHint">点击题目 → 自己先说 → 再看答案 → 标记掌握</em>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第一部分：理论题 SVG BANNER -->
+<!-- ============================================================ -->
+<div class="section" data-category="theory">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:var(--primary-light);">📖</span>
+      理论题
+      <span class="badge">10道核心题</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <!-- SVG Banner -->
+    <svg class="section-banner" viewBox="0 0 700 100" style="width:100%;height:auto;" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#theoryGrad)"/>
+      <defs>
+        <linearGradient id="theoryGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#E8F0FE"/>
+          <stop offset="100%" stop-color="#D6E4FF"/>
+        </linearGradient>
+      </defs>
+      <!-- 老师和小人 -->
+      <circle cx="120" cy="50" r="18" fill="#4A90D9" opacity="0.2"/>
+      <circle cx="120" cy="42" r="7" fill="#4A90D9"/>
+      <rect x="112" y="51" width="16" height="14" rx="3" fill="#4A90D9" opacity="0.7"/>
+      <line x1="112" y1="56" x2="106" y2="70" stroke="#4A90D9" stroke-width="2" opacity="0.5"/>
+      <line x1="128" y1="56" x2="134" y2="70" stroke="#4A90D9" stroke-width="2" opacity="0.5"/>
+      <!-- 孩子1 -->
+      <circle cx="170" cy="55" r="6" fill="#FF6B6B"/>
+      <circle cx="170" cy="51" r="3" fill="#FF6B6B"/>
+      <rect x="165" y="57" width="10" height="10" rx="2" fill="#FF6B6B" opacity="0.6"/>
+      <!-- 孩子2 -->
+      <circle cx="190" cy="52" r="5" fill="#FA8C16"/>
+      <circle cx="190" cy="49" r="2.5" fill="#FA8C16"/>
+      <rect x="186" y="54" width="8" height="8" rx="2" fill="#FA8C16" opacity="0.6"/>
+      <!-- 孩子3 -->
+      <circle cx="208" cy="48" r="5" fill="#52C41A"/>
+      <circle cx="208" cy="45" r="2.5" fill="#52C41A"/>
+      <rect x="204" y="50" width="8" height="8" rx="2" fill="#52C41A" opacity="0.6"/>
+      <!-- 文字 -->
+      <text x="280" y="42" font-size="15" font-weight="700" fill="#2D5F8A" font-family="-apple-system,sans-serif">保教结合 · 游戏学习 · 个体差异</text>
+      <text x="280" y="64" font-size="13" fill="#4A90D9" opacity="0.8" font-family="-apple-system,sans-serif">一日生活皆课程 · 以幼儿为本 · 正面教育</text>
+      <!-- 装饰 -->
+      <text x="280" y="82" font-size="11" fill="#4A90D9" opacity="0.5" font-family="-apple-system,sans-serif">点击题目展开答案 · 圆点标记已掌握</text>
+      <!-- 爱心 -->
+      <text x="640" y="50" font-size="24" opacity="0.3">♥</text>
+      <text x="620" y="75" font-size="16" opacity="0.2">♥</text>
+      <!-- 星星 -->
+      <text x="20" y="20" font-size="14" opacity="0.3">⭐</text>
+      <text x="660" y="25" font-size="12" opacity="0.25">⭐</text>
+    </svg>
+
+    <!-- 理论题1 -->
+    <div class="card" data-id="theory-1">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">1</span>
+        <span class="q-text">请谈谈你对"保教结合"的理解，并结合你的工作经验说说如何落实</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            保教结合我理解就是，在幼儿园里保育和教育是分不开的，不是保育员只管吃喝拉撒、老师只管上课。我自己就在保育岗上，特别有体会。比如我教孩子叠衣服，表面上看是生活自理，是保育的内容，但实际上我在这个过程中教了孩子手眼协调，教了顺序感（先铺平再对折），还教了<span class="highlight">"自己的事情自己做"</span>的责任意识，这就是教育。反过来，老师上课的时候，也要关注孩子是不是坐姿正确、有没有及时喝水、用眼卫生这些，这就是教育中的保育。所以保教结合不是一句口号，是把教育渗透在每一个生活环节里，把保育也当作教育的机会。我在日常工作中一直都是这么做的，比如孩子洗手的时候我会教七步洗手法，不仅洗得干净，还让孩子学会了步骤和耐心。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">分不开</span>
+          <span class="tag">叠衣服例子</span>
+          <span class="tag">保育中有教育</span>
+          <span class="tag">教育中有保育</span>
+          <span class="tag">洗手七步法</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题2 -->
+    <div class="card" data-id="theory-2">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">2</span>
+        <span class="q-text">幼儿在游戏中学习，请你谈谈对这句话的理解</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            "幼儿在游戏中学习"这句话，我当保育员这几年特别认同。孩子不是坐在那里听我们说就能学会东西的，他是在玩的过程中学的。比如我们班之前有个建构区，孩子用积木搭房子，他那个过程中就在学很多：怎么让房子不倒，这是在学物理平衡；他要和别的小朋友合作搭一个大的，这是在学社交和分工；搭完了还要给老师讲他搭的是什么，这是在学语言表达。有时候他会数用了多少块积木，不知不觉就在学数学。所以游戏不是"随便玩"，是孩子认识世界的方式。老师和保育员要做的是<span class="highlight">提供材料、观察他们、在需要的时候引导一下</span>，而不是打断和灌输。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不是坐着听</span>
+          <span class="tag">搭积木例子</span>
+          <span class="tag">学平衡+社交+语言+数学</span>
+          <span class="tag">教师是观察者和支持者</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题3 -->
+    <div class="card" data-id="theory-3">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">3</span>
+        <span class="q-text">请说说你理解中的"幼儿发展个体差异"，结合实际谈谈你会怎么做</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            个体差异就是说，每个孩子都是不一样的，不能用一把尺子量所有人。我带过的孩子里，同样是小班，有的孩子来了一个星期就不哭了，有的要哭一个月。有的孩子三岁就能自己吃饭穿衣，有的到了中班还需要帮忙。这些差异是正常的，不是"好"和"坏"的区别。遇到这种情况，我不会催那个适应慢的孩子，也不会批评他，而是多给他一些时间。比如有个孩子每天早上都哭，后来我发现他特别喜欢帮老师摆小椅子，我就每天让他当"小帮手"，他慢慢就不哭了。所以个体差异就是提醒我们，<span class="highlight">要看到每个孩子的不同</span>，有的孩子需要更多耐心，有的孩子需要更多挑战。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">每个孩子不一样</span>
+          <span class="tag">哭的例子+摆椅子例子</span>
+          <span class="tag">不催不批评</span>
+          <span class="tag">给时间给机会</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题4 -->
+    <div class="card" data-id="theory-4">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">4</span>
+        <span class="q-text">幼儿园一日生活皆课程，你怎么理解？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            "一日生活皆课程"意思就是，不是说上课那二十分钟才是学习，孩子从早上进园到下午离园，每一个环节都在学东西。我当保育员感触很深。比如早上入园的时候，孩子要学会和老师打招呼、把自己的东西放到柜子里，这是在学礼貌和整理。洗手的时候，要学会排队、学会七步洗手法，这是在学规则和卫生习惯。吃饭的时候，要学会自己用勺子筷子、不挑食、吃完自己收拾，这是在学自理。午睡的时候，要学会自己脱衣服叠衣服、安静休息不打扰别人，这是在学规则和体谅。所以我在保育工作中不是只"看"孩子，我会利用这些环节去教他们。<span class="highlight">叠衣服、分餐具、擦桌子，都是让孩子动手做，做了就学到了。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不只是上课</span>
+          <span class="tag">入园/洗手/吃饭/午睡都是学习</span>
+          <span class="tag">每次动手都是学到东西</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题5 -->
+    <div class="card" data-id="theory-5">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">5</span>
+        <span class="q-text">你如何看待"以幼儿为本"这句话？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            "以幼儿为本"我的理解就是，做什么事情都要从孩子的角度去想，而不是从大人的方便去想。比如有时候老师为了省事，包办代替，帮孩子穿衣服、喂饭，这样确实快，但孩子没有学到东西。以幼儿为本，就是应该让孩子自己去尝试，哪怕慢一点。还有一个理解是，要注意到每个孩子的需要是不一样的。有的孩子今天情绪不好，可能需要老师多抱抱；有的孩子好奇心强，需要给他更多探索的机会；有的孩子在某方面发展慢一点，需要多等一等。所以以幼儿为本，说白了就是，<span class="highlight">我们要跟着孩子的节奏走，而不是让孩子跟着我们的节奏走。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">从孩子角度想</span>
+          <span class="tag">不包办代替</span>
+          <span class="tag">每个孩子需要不同</span>
+          <span class="tag">跟着孩子的节奏</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题6 -->
+    <div class="card" data-id="theory-6">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">6</span>
+        <span class="q-text">怎么理解"教师应成为幼儿学习活动的支持者、合作者、引导者"？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这句话我理解就是，老师的角色不是站在前面教，而是站在旁边陪。支持者，就是给孩子创造条件、提供材料、鼓励他们去尝试。比如孩子想搭一个很复杂的积木，我不会说"你搭不了"，我会帮他找合适的积木，鼓励他试试。合作者，就是老师也要参与到孩子的活动中去，不是高高在上指挥，而是<span class="highlight">蹲下来和孩子一起玩、一起探索</span>。我在保育岗上和孩子一起叠衣服、一起整理玩具，就是合作。引导者，就是当孩子遇到困难或者方向偏了的时候，给他一点提示，而不是直接告诉他答案。比如孩子搭积木倒了，我会问他"你想想为什么倒了，是不是下面太小了"，让他自己找到问题。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">支持=给材料给鼓励</span>
+          <span class="tag">合作=蹲下来一起玩</span>
+          <span class="tag">引导=给提示不给答案</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题7 -->
+    <div class="card" data-id="theory-7">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">7</span>
+        <span class="q-text">你如何看待"环境是第三位老师"？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            "环境是第三位老师"意思就是，除了老师和家长，幼儿园的环境本身也在教孩子东西。比如说，我们在教室的墙上贴了洗手步骤图，孩子每天看到，慢慢就学会了怎么正确洗手。还有，如果玩具柜上贴了图片标签，孩子就知道什么玩具放哪里，不用老师说，他自己就会收拾。所以环境创设不是只为了好看，是为了让孩子能自主学习。我在保育岗上的时候，会注意把孩子的物品放在他能拿得到的地方，贴上他的名字和照片，让他自己取放。<span class="highlight">这些细节就是在创造"会说话的环境"。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">环境也在教</span>
+          <span class="tag">洗手图+玩具标签例子</span>
+          <span class="tag">让孩子自主学习</span>
+          <span class="tag">物品放孩子能拿到的地方</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题8 -->
+    <div class="card" data-id="theory-8">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">8</span>
+        <span class="q-text">请你谈谈对"游戏是幼儿园的基本活动"的理解</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这句话的意思就是，幼儿园最主要的活动形式应该是游戏，不是像小学那样坐在那里上课。为什么呢？因为孩子天生就是通过游戏来认识世界、学习东西的。你让他坐着听，他听不进去多少；但是你让他玩角色扮演，扮演医生给娃娃看病，他不知不觉就学到了：怎么和人对话、怎么拿听诊器、怎么关心别人。这些比认字算数更重要。所以幼儿园的"课"应该就是游戏的形式。<span class="highlight">在游戏中，孩子是主动的、开心的，学习效果才最好。</span>我们老师和保育员的任务，就是设计好玩的游戏，提供丰富的材料，然后在旁边观察和支持。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不是坐着上课</span>
+          <span class="tag">角色扮演例子</span>
+          <span class="tag">孩子主动+开心</span>
+          <span class="tag">学习效果最好</span>
+          <span class="tag">教师设计游戏+提供材料</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题9 -->
+    <div class="card" data-id="theory-9">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">9</span>
+        <span class="q-text">你认为幼小衔接应该怎么做？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            幼小衔接不是说在大班提前教拼音、算数，那种做法反而是不对的。真正的幼小衔接是培养孩子的能力和习惯，让他上小学后能适应。比如：自己整理书包、自己上厕所、上课能坐住一段时间、能听懂老师的指令、能和同学好好相处。这些能力在幼儿园的一日生活中每天都在培养。像我在保育工作中，会要求孩子自己叠衣服、自己收拾餐具、自己把椅子放好，这些都是在为他的独立能力打基础。另外还有一点很重要，就是培养孩子的<span class="highlight">任务意识</span>，比如让他完成一个小任务再去玩，让他知道"先做该做的，再做想做的"，这是上小学后很重要的习惯。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不是提前学知识</span>
+          <span class="tag">培养能力习惯</span>
+          <span class="tag">整理/如厕/坐住/听指令/与人相处</span>
+          <span class="tag">任务意识</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 理论题10 -->
+    <div class="card" data-id="theory-10">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">10</span>
+        <span class="q-text">你如何看待对幼儿的"正面教育"？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            正面教育就是多鼓励、多肯定，少批评、少否定。我当保育员这几年体会到，孩子越小，越需要被肯定。比如一个孩子吃饭吃得慢，如果我说"你怎么这么慢"，他可能会更紧张更慢；如果我说"今天比昨天快了一点，真棒"，他就会更有信心。当然正面教育不是说不能指出问题，而是指出的方式要好。比如孩子打人了，我不会说"你真坏"，我会说"打人是不对的，但是我知道你不是故意的，下次我们可以用嘴巴说，好吗？"这样既指出了行为不对，又保护了孩子的自尊心。还有就是<span class="highlight">多用具体的表扬</span>，比如"你今天自己把衣服叠得很整齐"，比笼统地说"你真棒"要好。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">多鼓励少批评</span>
+          <span class="tag">吃饭例子</span>
+          <span class="tag">指出问题但保护自尊</span>
+          <span class="tag">具体表扬比笼统表扬好</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第二部分：时政题 -->
+<!-- ============================================================ -->
+<div class="section" data-category="shizheng">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:var(--gold-light);">🏛</span>
+      时政题
+      <span class="badge">10道必考题</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <!-- SVG Banner -->
+    <svg class="section-banner" viewBox="0 0 700 100" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#shizhengGrad)"/>
+      <defs>
+        <linearGradient id="shizhengGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FFF7E6"/>
+          <stop offset="100%" stop-color="#FFFBE6"/>
+        </linearGradient>
+      </defs>
+      <!-- 红旗 -->
+      <rect x="60" y="25" width="30" height="20" rx="2" fill="#FF6B6B" opacity="0.3"/>
+      <line x1="75" y1="25" x2="75" y2="75" stroke="#FA8C16" stroke-width="2" opacity="0.4"/>
+      <circle cx="68" cy="32" r="3" fill="#FFD700" opacity="0.6"/>
+      <!-- 人 -->
+      <circle cx="130" cy="40" r="8" fill="#FA8C16" opacity="0.3"/>
+      <rect x="123" y="49" width="14" height="16" rx="3" fill="#FA8C16" opacity="0.5"/>
+      <line x1="123" y1="55" x2="117" y2="72" stroke="#FA8C16" stroke-width="2" opacity="0.4"/>
+      <line x1="137" y1="55" x2="143" y2="72" stroke="#FA8C16" stroke-width="2" opacity="0.4"/>
+      <!-- 书本 -->
+      <rect x="165" y="40" width="28" height="22" rx="2" fill="#722ED1" opacity="0.15"/>
+      <line x1="172" y1="45" x2="172" y2="58" stroke="#722ED1" stroke-width="1.5" opacity="0.3"/>
+      <line x1="178" y1="45" x2="178" y2="58" stroke="#722ED1" stroke-width="1.5" opacity="0.3"/>
+      <!-- 文字 -->
+      <text x="230" y="38" font-size="15" font-weight="700" fill="#D46B08" font-family="-apple-system,sans-serif">四有好老师 · 立德树人 · 幼有善育</text>
+      <text x="230" y="58" font-size="13" fill="#FA8C16" opacity="0.8" font-family="-apple-system,sans-serif">教育家精神 · 四个自信 · 社会主义核心价值观</text>
+      <text x="230" y="78" font-size="11" fill="#FA8C16" opacity="0.5" font-family="-apple-system,sans-serif">德智体美劳 · 教育公平 · 劳动教育</text>
+      <!-- 装饰 -->
+      <text x="620" y="35" font-size="20" opacity="0.15">★</text>
+      <text x="640" y="70" font-size="14" opacity="0.12">★</text>
+      <text x="20" y="22" font-size="12" opacity="0.25">🏛</text>
+    </svg>
+
+    <!-- 时政题1 -->
+    <div class="card" data-id="shizheng-1">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">1</span>
+        <span class="q-text">你怎么理解"四有好老师"？结合你的工作谈谈如何践行</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            四有好老师是习近平总书记提出来的，指的是<span class="highlight">有理想信念、有道德情操、有扎实学识、有仁爱之心</span>。我用我自己的话理解就是：第一，有理想信念，就是我不是为了拿一份工资来做这份工作的，我是真的喜欢孩子、喜欢幼教，想在这个岗位上做好。第二，有道德情操，就是要以身作则，孩子会模仿我们，我要求自己每天微笑对待孩子、说话轻声细语、做事情有耐心。第三，有扎实学识，我知道自己之前学历不算高，笔试也考了好几次，但我一直在学习，以后工作了也会继续学，向有经验的老师请教。第四，有仁爱之心，就是真心爱孩子，每个孩子都是不一样的，有的孩子乖有的孩子调皮，但老师不能偏心，要一视同仁地关心。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">四有</span>
+          <span class="tag">信念=真喜欢</span>
+          <span class="tag">道德=以身作则</span>
+          <span class="tag">学识=继续学</span>
+          <span class="tag">仁爱=真心爱孩子</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题2 -->
+    <div class="card" data-id="shizheng-2">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">2</span>
+        <span class="q-text">你怎么理解"立德树人"？在幼儿园如何践行？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            立德树人我的理解就是，教育不只是教知识，更重要的是教孩子做人。在幼儿园阶段，立德树人就是培养孩子良好的品德和行为习惯。比如通过故事告诉孩子要诚实、要分享、要尊重别人。像"孔融让梨"的故事，孩子们听完就知道谦让是好的。还有日常生活中，孩子帮了别人，我会及时表扬"你真是一个有爱心的小朋友"，这就是在做立德树人的工作。另外老师自己也要做好榜样，孩子会看老师怎么对待别人、怎么处理问题。所以<span class="highlight">立德树人不是一堂课，是渗透在每一天的每一个细节里。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不只是教知识</span>
+          <span class="tag">教做人</span>
+          <span class="tag">诚实分享尊重</span>
+          <span class="tag">故事+日常表扬+老师做榜样</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题3 -->
+    <div class="card" data-id="shizheng-3">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">3</span>
+        <span class="q-text">你怎么理解"幼有善育"？深圳在这方面做了哪些努力？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            "幼有善育"我的理解就是，让每个孩子不光有幼儿园上，而且要上好幼儿园，得到好的照顾和教育。深圳在这方面做了很多工作。我了解到深圳建了很多<span class="highlight">普惠性幼儿园</span>，让家长的收费负担减轻了。还有<span class="highlight">集团化办学</span>，用好的幼儿园去带动新建的幼儿园。还有一个跟我自己相关的，就是深圳规定公办园的老师要达到本科学历，教师的工资参照中小学教师的标准，这个政策吸引更多优秀的人来做幼师。落到我自己身上的话，我觉得"幼有善育"就是要做好保育和教育的结合，把每个孩子都照顾好、教育好，让家长放心，这就是我的"幼有善育"。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">上好幼儿园</span>
+          <span class="tag">普惠园+集团化办学+教师待遇提升</span>
+          <span class="tag">落到自己=做好保教结合</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题4 -->
+    <div class="card" data-id="shizheng-4">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">4</span>
+        <span class="q-text">你怎么理解"教育家精神"？作为一名幼儿园教师，你如何践行？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            教育家精神是2025年国家提出的，我觉得核心就是：把教育当成事业来做，不只是当成一份工作。对于我来说，践行教育家精神就是三件事：第一，真心爱每个孩子，不管他家庭条件怎么样、性格怎么样，都是一样的关心；第二，不断学习提高自己，不能觉得"反正就是带带孩子"就不学习了，我笔试考了好几次才通过，但我一直没放弃，这就是一种坚持学习的精神；第三，在日常工作中用心去做，不只是完成任务，比如我教孩子叠衣服，不是快点叠完就算了，而是要想怎么教孩子更容易学会、怎么让孩子做得开心、怎么让家长也配合。<span class="highlight">把每一件小事都用心做，就是在践行教育家精神。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">当成事业</span>
+          <span class="tag">三件事：爱孩子+不断学习+用心做每件小事</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题5 -->
+    <div class="card" data-id="shizheng-5">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">5</span>
+        <span class="q-text">谈谈对"四个自信"的理解，在幼儿园如何培养孩子的文化自信？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            四个自信是<span class="highlight">道路自信、理论自信、制度自信、文化自信</span>。在幼儿园阶段，最重要的是培养文化自信。怎么培养呢？我觉得可以通过传统节日，比如春节带孩子包饺子、贴窗花、讲年的故事；中秋节做月饼、赏月、讲嫦娥奔月。还有可以通过古诗，像《春晓》《咏鹅》这些简单好听的古诗，让孩子感受中国语言的美。还有中国传统的手工，像剪纸、做风筝、画脸谱，都可以让孩子动手体验。另外，深圳是科技之城，我们也可以带孩子了解深圳从一个小渔村变成大都市的故事，培养对家乡的热爱和自豪感。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">四个自信</span>
+          <span class="tag">文化自信最重要</span>
+          <span class="tag">传统节日+古诗+手工+深圳故事</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题6 -->
+    <div class="card" data-id="shizheng-6">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">6</span>
+        <span class="q-text">如何理解"培养德智体美劳全面发展的社会主义建设者和接班人"？幼儿园阶段如何做？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这句话我理解就是，教育的目标不是只让孩子学会认字算数，而是要全面发展。在幼儿园阶段，<span class="highlight">德</span>就是培养好品德，诚实、友善、有礼貌；<span class="highlight">智</span>不是学知识，而是激发孩子的好奇心和探索欲；<span class="highlight">体</span>就是保证孩子有足够的户外活动时间，发展跑、跳、爬这些基本动作；<span class="highlight">美</span>就是让孩子感受美，比如画画、唱歌、欣赏大自然；<span class="highlight">劳</span>就是让孩子自己的事情自己做，叠衣服、收拾玩具、分餐具这些，培养劳动的习惯。我在保育工作中，特别注重"劳"这一点，从小班开始就让孩子自己收餐具、自己叠衣服，做得不好没关系，关键是养成"自己的事情自己做"的意识。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">德=好品德</span>
+          <span class="tag">智=好奇心</span>
+          <span class="tag">体=户外活动</span>
+          <span class="tag">美=感受美</span>
+          <span class="tag">劳=自己的事自己做</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题7 -->
+    <div class="card" data-id="shizheng-7">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">7</span>
+        <span class="q-text">习近平总书记说"选择当老师就选择了责任"，结合你的经历谈谈理解</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这句话我的体会很深。我在私立园当过三年主班老师，后来又在公办园当保育员，这么多年下来，我觉得当老师真的就是一份责任。这份责任首先是对孩子的<span class="highlight">安全责任</span>，在幼儿园里，孩子的安全是第一位的，老师要时刻关注。其次是<span class="highlight">教育责任</span>，孩子的很多习惯和能力是在幼儿园养成的，我们怎么教、教什么，会影响孩子很久。我自己笔试考了好几次，就是知道自己的专业能力还不够，但我不想随便算了，因为我觉得既然选择了这份工作，就要负责任地把专业能力提上去。所以责任不只是说出来的，是做出来的，是每一天认真对待每一个孩子、每一件小事。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">安全责任+教育责任</span>
+          <span class="tag">笔试考几次不放弃</span>
+          <span class="tag">认真对待每个孩子每件小事</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题8 -->
+    <div class="card" data-id="shizheng-8">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">8</span>
+        <span class="q-text">请你谈谈对"社会主义核心价值观"的理解，在幼儿园如何渗透？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            社会主义核心价值观24个字，分三个层面：国家层面是<span class="highlight">富强、民主、文明、和谐</span>；社会层面是<span class="highlight">自由、平等、公正、法治</span>；个人层面是<span class="highlight">爱国、敬业、诚信、友善</span>。在幼儿园阶段，我们主要是在个人层面做。友善，就是教孩子和同伴友好相处，不打人、会分享。诚信，就是让孩子知道不能撒谎，做错事要承认。敬业，对孩子来说就是认真做好自己的"工作"，比如认真洗手、认真叠衣服。爱国，可以通过升国旗、唱国歌、认识国旗和天安门来培养。这些不是专门开一堂课来教，而是在日常生活中渗透。比如孩子帮了别人，我会说"你是一个友善的好孩子"；孩子承认了错误，我会说"你真是一个诚实的小朋友"。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">24字分三层</span>
+          <span class="tag">友善+诚信+敬业+爱国</span>
+          <span class="tag">日常生活中渗透</span>
+          <span class="tag">具体表扬强化</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题9 -->
+    <div class="card" data-id="shizheng-9">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">9</span>
+        <span class="q-text">你如何看待"教育公平"？作为一名幼儿教师，在工作中如何促进教育公平？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            教育公平我的理解就是，每个孩子不管来自什么家庭、有什么背景，都应该得到同样的关注和教育机会。在幼儿园里，教育公平首先体现在老师不能偏心。我自己当保育员的时候，特别注意这一点，不管是乖巧的孩子还是调皮的孩子，我都是一样的关心。还有就是要关注到那些容易被忽略的孩子，比如性格内向不主动说话的孩子，我会主动去和他聊天、鼓励他。还有就是在活动设计上，要考虑不同能力水平的孩子都能参与。比如手工活动，对能力强的孩子我给他难一点的任务，对能力弱的孩子我给他简单一点的任务，这样每个孩子都有成功的体验。<span class="highlight">这就是教育公平在日常工作中的体现。</span>
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">每个孩子都得到同样的关注</span>
+          <span class="tag">不偏心</span>
+          <span class="tag">主动关注内向孩子</span>
+          <span class="tag">不同难度让每个孩子都能参与</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 时政题10 -->
+    <div class="card" data-id="shizheng-10">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">10</span>
+        <span class="q-text">你怎么看待"劳动教育"在幼儿园阶段的实施？</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            劳动教育在幼儿园阶段很重要，但不是让孩子做苦力，而是培养孩子的自理能力和责任感。我自己在保育工作中天天都在做劳动教育。小班的孩子，我会教他们自己把椅子推回去、自己把杯子放好。中班的孩子，可以自己叠衣服、自己分餐具、自己收玩具。大班的孩子，可以做值日生，帮忙擦桌子、扫地、给植物浇水。这些事情看起来是小事，但孩子在做的时候，就学会了"我是班级的一员，我也有责任"，还锻炼了动手能力。另外很重要的一点是，<span class="highlight">家长也要配合</span>，不要在家里包办代替。我会跟家长说，让孩子自己在家里也做一些力所能及的事，在幼儿园学到的东西才能巩固。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不是苦力</span>
+          <span class="tag">培养自理和责任感</span>
+          <span class="tag">小班/中班/大班不同要求</span>
+          <span class="tag">值日生例子</span>
+          <span class="tag">家园配合</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第三部分：绘画备考 SVG -->
+<!-- ============================================================ -->
+<div class="section" data-category="drawing">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:var(--teal-light);">🎨</span>
+      绘画备考方案
+      <span class="badge">限时训练</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <!-- SVG Banner -->
+    <svg class="section-banner" viewBox="0 0 700 100" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#drawGrad)"/>
+      <defs>
+        <linearGradient id="drawGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#E6FFFB"/>
+          <stop offset="100%" stop-color="#F0F5FF"/>
+        </linearGradient>
+      </defs>
+      <!-- 太阳 -->
+      <circle cx="60" cy="40" r="16" fill="#FFD700" opacity="0.3"/>
+      <line x1="60" y1="18" x2="60" y2="12" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+      <line x1="78" y1="28" x2="83" y2="23" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+      <line x1="82" y1="45" x2="88" y2="48" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+      <line x1="38" y1="28" x2="33" y2="23" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+      <line x1="38" y1="45" x2="32" y2="48" stroke="#FFD700" stroke-width="1.5" opacity="0.4"/>
+      <!-- 云朵 -->
+      <ellipse cx="120" cy="38" rx="20" ry="8" fill="#fff" opacity="0.5"/>
+      <ellipse cx="110" cy="35" rx="12" ry="7" fill="#fff" opacity="0.6"/>
+      <ellipse cx="130" cy="35" rx="12" ry="7" fill="#fff" opacity="0.6"/>
+      <!-- 房子 -->
+      <rect x="170" y="45" width="30" height="22" rx="2" fill="#FF6B6B" opacity="0.2"/>
+      <polygon points="185,30 165,45 205,45" fill="#4A90D9" opacity="0.15"/>
+      <rect x="180" y="52" width="8" height="15" rx="1" fill="#FA8C16" opacity="0.25"/>
+      <!-- 小孩 -->
+      <circle cx="230" cy="42" r="6" fill="#52C41A" opacity="0.3"/>
+      <line x1="230" y1="48" x2="230" y2="62" stroke="#52C41A" stroke-width="2" opacity="0.3"/>
+      <line x1="225" y1="52" x2="235" y2="52" stroke="#52C41A" stroke-width="2" opacity="0.3"/>
+      <line x1="224" y1="68" x2="230" y2="62" stroke="#52C41A" stroke-width="2" opacity="0.3"/>
+      <line x1="236" y1="68" x2="230" y2="62" stroke="#52C41A" stroke-width="2" opacity="0.3"/>
+      <!-- 画板 -->
+      <rect x="260" y="35" width="22" height="28" rx="2" fill="#722ED1" opacity="0.1"/>
+      <line x1="271" y1="28" x2="271" y2="35" stroke="#722ED1" stroke-width="2" opacity="0.2"/>
+      <!-- 文字 -->
+      <text x="310" y="38" font-size="15" font-weight="700" fill="#08979C" font-family="-apple-system,sans-serif">五大必练主体物 · 万能画面公式</text>
+      <text x="310" y="58" font-size="13" fill="#13C2C2" opacity="0.8" font-family="-apple-system,sans-serif">笑脸孩子 · 国旗天安门 · 熊猫 · 大树小花 · 房子</text>
+      <text x="310" y="78" font-size="11" fill="#13C2C2" opacity="0.5" font-family="-apple-system,sans-serif">每天1幅 · 先求像再求快 · 10分钟限时</text>
+      <!-- 画笔 -->
+      <line x1="615" y1="30" x2="635" y2="70" stroke="#FF6B6B" stroke-width="2" opacity="0.3"/>
+      <circle cx="638" cy="74" r="3" fill="#FF6B6B" opacity="0.3"/>
+      <text x="640" y="42" font-size="16" opacity="0.2">🖌</text>
+    </svg>
+
+    <div style="margin-top:14px;padding:14px 16px;background:linear-gradient(135deg,#f8f9fa 0%,#f0f2f5 100%);border-radius:var(--radius-sm);font-size:14px;line-height:2;border-left:4px solid var(--teal);">
+      <strong>📌 现状分析：</strong>有基础，但平时画得少。去年考过《中国娃》，有实战经验。
+      <span style="display:inline-block;background:var(--accent-light);padding:2px 10px;border-radius:4px;color:var(--accent);font-weight:700;margin-left:6px;">最主要的问题：构思慢</span>
+      —— 拿到题目后不知道画什么，下面帮你解决这个问题。
+    </div>
+
+    <!-- 万能画面公式 SVG -->
+    <h3 style="font-size:15px;margin:18px 0 10px;display:flex;align-items:center;gap:6px;">📐 万能画面公式</h3>
+    <svg viewBox="0 0 660 140" style="width:100%;height:auto;border-radius:var(--radius-sm);background:#f8f9fa;">
+      <rect x="2" y="2" width="656" height="136" rx="8" fill="none" stroke="#d9d9d9" stroke-width="1" stroke-dasharray="4"/>
+      <!-- 天空 -->
+      <circle cx="60" cy="25" r="10" fill="#FFD700" opacity="0.4"/>
+      <rect x="20" y="38" width="80" height="4" rx="2" fill="#d9d9d9" opacity="0.5"/>
+      <rect x="40" y="30" width="40" height="4" rx="2" fill="#d9d9d9" opacity="0.3"/>
+      <!-- 主体物 -->
+      <rect x="180" y="42" width="60" height="60" rx="4" fill="#4A90D9" opacity="0.15"/>
+      <text x="195" y="76" font-size="12" fill="#4A90D9" font-weight="600" font-family="-apple-system,sans-serif">主 体 物</text>
+      <text x="193" y="92" font-size="10" fill="#4A90D9" opacity="0.7" font-family="-apple-system,sans-serif">（大·中间偏左）</text>
+      <!-- 配景 -->
+      <rect x="270" y="55" width="40" height="30" rx="3" fill="#52C41A" opacity="0.15"/>
+      <text x="276" y="74" font-size="10" fill="#52C41A" font-weight="600" font-family="-apple-system,sans-serif">配景</text>
+      <!-- 草地 -->
+      <path d="M20,110 Q40,98 60,110 Q80,98 100,110 Q120,98 140,110 Q160,98 180,110 Q200,98 220,110 Q240,98 260,110 Q280,98 300,110 Q320,98 340,110 Q360,98 380,110 Q400,98 420,110 Q440,98 460,110 Q480,98 500,110 Q520,98 540,110 Q560,98 580,110 Q600,98 620,110 L640,130 L0,130 Z" fill="#52C41A" opacity="0.12"/>
+      <!-- 花 -->
+      <circle cx="100" cy="112" r="3" fill="#FF6B6B" opacity="0.4"/>
+      <circle cx="140" cy="108" r="2.5" fill="#FA8C16" opacity="0.4"/>
+      <circle cx="380" cy="110" r="3" fill="#FF6B6B" opacity="0.4"/>
+      <circle cx="500" cy="106" r="2.5" fill="#722ED1" opacity="0.4"/>
+      <!-- 箭头标注 -->
+      <text x="30" y="20" font-size="10" fill="#999" font-family="-apple-system,sans-serif">☀️ 顶部装饰</text>
+      <text x="132" y="120" font-size="10" fill="#999" font-family="-apple-system,sans-serif">🌿 底部装饰</text>
+      <!-- 提示 -->
+      <text x="420" y="76" font-size="11" fill="#999" font-family="-apple-system,sans-serif">← 先画主体，再补配景</text>
+    </svg>
+
+    <!-- 五大必练主体物 -->
+    <h3 style="font-size:15px;margin:18px 0 10px;display:flex;align-items:center;gap:6px;">✏️ 五大必练主体物</h3>
+    <div class="drawing-grid">
+      <div class="drawing-item">
+        <svg viewBox="0 0 100 80" style="width:100%;height:60px;">
+          <circle cx="50" cy="28" r="14" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="1.5"/>
+          <circle cx="44" cy="25" r="2" fill="#333"/>
+          <circle cx="56" cy="25" r="2" fill="#333"/>
+          <path d="M44,35 Q50,40 56,35" fill="none" stroke="#FF6B6B" stroke-width="1.5"/>
+          <rect x="38" y="43" width="24" height="20" rx="4" fill="#4A90D9" opacity="0.3" stroke="#4A90D9" stroke-width="1"/>
+          <line x1="38" y1="48" x2="32" y2="60" stroke="#4A90D9" stroke-width="1.5" opacity="0.5"/>
+          <line x1="62" y1="48" x2="68" y2="60" stroke="#4A90D9" stroke-width="1.5" opacity="0.5"/>
+        </svg>
+        <div class="subject">笑脸孩子</div>
+        <div class="desc">5分钟画完，表情生动</div>
+        <div class="themes">中国娃、我爱我家、好朋友、运动会</div>
+      </div>
+      <div class="drawing-item">
+        <svg viewBox="0 0 100 80" style="width:100%;height:60px;">
+          <rect x="25" y="30" width="50" height="35" rx="3" fill="#FFF3CD" stroke="#FA8C16" stroke-width="1"/>
+          <rect x="30" y="35" width="8" height="12" rx="1" fill="#FA8C16" stroke-width="0.5"/>
+          <rect x="42" y="35" width="8" height="12" rx="1" fill="#FA8C16" stroke-width="0.5"/>
+          <rect x="54" y="35" width="8" height="12" rx="1" fill="#FA8C16" stroke-width="0.5"/>
+          <rect x="36" y="50" width="28" height="15" rx="2" fill="#A8071A" stroke="#A8071A" stroke-width="1"/>
+          <circle cx="45" cy="55" r="2.5" fill="#FFD700"/>
+          <circle cx="55" cy="55" r="2.5" fill="#FFD700"/>
+        </svg>
+        <div class="subject">国旗+天安门</div>
+        <div class="desc">天安门简化成梯形+柱子</div>
+        <div class="themes">爱国主题、升旗、国庆</div>
+      </div>
+      <div class="drawing-item">
+        <svg viewBox="0 0 100 80" style="width:100%;height:60px;">
+          <ellipse cx="50" cy="38" rx="18" ry="16" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <circle cx="50" cy="22" r="12" fill="#fff" stroke="#333" stroke-width="1.5"/>
+          <circle cx="44" cy="20" r="2" fill="#333"/>
+          <circle cx="56" cy="20" r="2" fill="#333"/>
+          <circle cx="44" cy="20" r="0.8" fill="#fff"/>
+          <circle cx="56" cy="20" r="0.8" fill="#fff"/>
+          <ellipse cx="50" cy="26" rx="4" ry="2" fill="#333"/>
+          <circle cx="46" cy="36" r="5" fill="#333"/>
+          <circle cx="54" cy="36" r="5" fill="#333"/>
+        </svg>
+        <div class="subject">熊猫</div>
+        <div class="desc">圆头圆身，黑白分明</div>
+        <div class="themes">中国特色、动物、环保</div>
+      </div>
+      <div class="drawing-item">
+        <svg viewBox="0 0 100 80" style="width:100%;height:60px;">
+          <rect x="46" y="30" width="8" height="35" rx="3" fill="#8B4513" opacity="0.7"/>
+          <circle cx="50" cy="25" r="22" fill="#52C41A" opacity="0.25" stroke="#52C41A" stroke-width="1.5"/>
+          <circle cx="50" cy="25" r="14" fill="#52C41A" opacity="0.15"/>
+          <circle cx="42" cy="22" r="3" fill="#FF6B6B" opacity="0.5"/>
+          <circle cx="55" cy="20" r="2.5" fill="#FF6B6B" opacity="0.5"/>
+          <circle cx="48" cy="28" r="2" fill="#FA8C16" opacity="0.5"/>
+          <path d="M20,60 Q25,55 30,60" stroke="#52C41A" stroke-width="1.5" fill="none" opacity="0.4"/>
+          <path d="M55,65 Q60,58 65,65" stroke="#52C41A" stroke-width="1.5" fill="none" opacity="0.4"/>
+        </svg>
+        <div class="subject">大树+小花</div>
+        <div class="desc">树干+圆形树冠，5瓣花</div>
+        <div class="themes">春天、自然、环保、季节</div>
+      </div>
+      <div class="drawing-item" style="grid-column:1/-1;">
+        <svg viewBox="0 0 200 60" style="width:100%;height:50px;">
+          <rect x="40" y="20" width="40" height="30" rx="2" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="1.5"/>
+          <polygon points="60,8 30,20 90,20" fill="#4A90D9" opacity="0.3" stroke="#4A90D9" stroke-width="1.5"/>
+          <rect x="52" y="30" width="12" height="20" rx="2" fill="#FA8C16" opacity="0.5" stroke="#FA8C16" stroke-width="1"/>
+          <circle cx="40" cy="28" r="2" fill="#FF6B6B"/>
+          <circle cx="42" cy="26" r="2" fill="#FF6B6B"/>
+          <circle cx="38" cy="26" r="2" fill="#FF6B6B"/>
+          <text x="110" y="40" font-size="13" font-weight="600" fill="#FF6B6B" font-family="-apple-system,sans-serif">房子+爱心</text>
+          <text x="110" y="54" font-size="11" fill="#999" font-family="-apple-system,sans-serif">我爱我家 · 我的幼儿园</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 考场10分钟流程图 SVG -->
+    <h3 style="font-size:15px;margin:18px 0 10px;display:flex;align-items:center;gap:6px;">⏱ 考场10分钟流程</h3>
+    <svg viewBox="0 0 660 120" style="width:100%;height:auto;border-radius:var(--radius-sm);">
+      <!-- 时间轴 -->
+      <line x1="60" y1="55" x2="600" y2="55" stroke="#d9d9d9" stroke-width="3" stroke-dasharray="6"/>
+      <!-- 阶段1 -->
+      <circle cx="140" cy="55" r="24" fill="#E8F0FE" stroke="#4A90D9" stroke-width="2.5"/>
+      <text x="140" y="52" font-size="11" font-weight="700" fill="#4A90D9" text-anchor="middle" font-family="-apple-system,sans-serif">0-2</text>
+      <text x="140" y="65" font-size="10" font-weight="700" fill="#4A90D9" text-anchor="middle" font-family="-apple-system,sans-serif">分钟</text>
+      <text x="140" y="95" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">画草图</text>
+      <text x="140" y="109" font-size="9" fill="#999" text-anchor="middle" font-family="-apple-system,sans-serif">定位置和大小</text>
+      <!-- 箭头 -->
+      <line x1="165" y1="55" x2="215" y2="55" stroke="#d9d9d9" stroke-width="2" marker-end="url(#arrow)"/>
+      <!-- 阶段2 -->
+      <circle cx="280" cy="55" r="24" fill="#FFF7E6" stroke="#FA8C16" stroke-width="2.5"/>
+      <text x="280" y="48" font-size="11" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">2-7</text>
+      <text x="280" y="61" font-size="10" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">分钟</text>
+      <text x="280" y="92" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">画主体+配景</text>
+      <text x="280" y="106" font-size="9" fill="#999" text-anchor="middle" font-family="-apple-system,sans-serif">勾线笔，不擦不改</text>
+      <!-- 箭头 -->
+      <line x1="305" y1="55" x2="355" y2="55" stroke="#d9d9d9" stroke-width="2"/>
+      <!-- 阶段3 -->
+      <circle cx="420" cy="55" r="24" fill="#F0FFF0" stroke="#52C41A" stroke-width="2.5"/>
+      <text x="420" y="48" font-size="11" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">7-10</text>
+      <text x="420" y="61" font-size="10" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">分钟</text>
+      <text x="420" y="92" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">涂色</text>
+      <text x="420" y="106" font-size="9" fill="#999" text-anchor="middle" font-family="-apple-system,sans-serif">主体鲜艳，背景浅色</text>
+      <!-- 完成 -->
+      <circle cx="540" cy="55" r="20" fill="#f0f0f0" stroke="#999" stroke-width="2"/>
+      <text x="540" y="52" font-size="12" font-weight="700" fill="#666" text-anchor="middle" font-family="-apple-system,sans-serif">✓</text>
+      <text x="540" y="65" font-size="10" fill="#666" text-anchor="middle" font-family="-apple-system,sans-serif">完成</text>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#d9d9d9"/>
+        </marker>
+      </defs>
+    </svg>
+
+    <!-- 练习计划 -->
+    <h3 style="font-size:15px;margin:18px 0 10px;display:flex;align-items:center;gap:6px;">🎯 三周练习计划</h3>
+    <svg viewBox="0 0 660 72" style="width:100%;height:auto;border-radius:var(--radius-sm);">
+      <rect x="10" y="5" width="200" height="62" rx="8" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1.5"/>
+      <text x="110" y="28" font-size="14" font-weight="700" fill="#4A90D9" text-anchor="middle" font-family="-apple-system,sans-serif">第 一 周</text>
+      <text x="110" y="46" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">不计时</text>
+      <text x="110" y="60" font-size="10" fill="#666" text-anchor="middle" font-family="-apple-system,sans-serif">画到像为止</text>
+
+      <rect x="230" y="5" width="200" height="62" rx="8" fill="#FFF7E6" stroke="#FA8C16" stroke-width="1.5"/>
+      <text x="330" y="28" font-size="14" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">第 二 周</text>
+      <text x="330" y="46" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">计时10分钟</text>
+      <text x="330" y="60" font-size="10" fill="#666" text-anchor="middle" font-family="-apple-system,sans-serif">逼自己快起来</text>
+
+      <rect x="450" y="5" width="200" height="62" rx="8" fill="#F0FFF0" stroke="#52C41A" stroke-width="1.5"/>
+      <text x="550" y="28" font-size="14" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">第 三 周</text>
+      <text x="550" y="46" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">快速反应</text>
+      <text x="550" y="60" font-size="10" fill="#666" text-anchor="middle" font-family="-apple-system,sans-serif">题目→草图→开画</text>
+    </svg>
+
+    <!-- Timer -->
+    <div class="timer-section">
+      <div class="timer-label">⏳ 限时训练计时器</div>
+      <div class="timer-display" id="timerDisplay">10:00</div>
+      <div class="timer-controls">
+        <button class="btn btn-primary" id="timerToggle">▶ 开始</button>
+        <button class="btn" id="timerReset">⟳ 重置</button>
+        <select id="timerDuration">
+          <option value="5">5 分钟</option>
+          <option value="10" selected>10 分钟</option>
+          <option value="15">15 分钟</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第四部分：结构化答题框架 SVG -->
+<!-- ============================================================ -->
+<div class="section" data-category="framework">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:var(--purple-light);">🧩</span>
+      结构化答题框架
+      <span class="badge">3大万能框架</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <!-- SVG Banner -->
+    <svg class="section-banner" viewBox="0 0 700 90" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="90" rx="10" fill="url(#fwGrad)"/>
+      <defs>
+        <linearGradient id="fwGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#F0E8FF"/>
+          <stop offset="100%" stop-color="#F5F0FF"/>
+        </linearGradient>
+      </defs>
+      <text x="350" y="35" font-size="18" font-weight="700" fill="#722ED1" text-anchor="middle" font-family="-apple-system,sans-serif">万能口诀 · 快速组织思路</text>
+      <text x="350" y="60" font-size="13" fill="#722ED1" opacity="0.8" text-anchor="middle" font-family="-apple-system,sans-serif">是·为·怎  |  停·做·说·防  |  听·懂·说·做</text>
+      <text x="350" y="78" font-size="11" fill="#722ED1" opacity="0.5" text-anchor="middle" font-family="-apple-system,sans-serif">背住口诀，拿什么题都不怕</text>
+    </svg>
+
+    <!-- 框架1 -->
+    <div class="fw-card">
+      <div class="fw-header" style="background:var(--primary-light);color:var(--primary-dark);">
+        <span>📋</span> 框架1：理论题/观点题
+        <span style="margin-left:auto;font-weight:400;font-size:13px;">口诀：<strong style="font-size:15px;letter-spacing:4px;">是 · 为 · 怎</strong></span>
+      </div>
+      <div class="fw-body">
+        <svg viewBox="0 0 620 80" style="width:100%;height:auto;">
+          <!-- 第一步 -->
+          <rect x="20" y="8" width="170" height="60" rx="10" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1.5"/>
+          <text x="105" y="36" font-size="18" font-weight="700" fill="#4A90D9" text-anchor="middle" font-family="-apple-system,sans-serif">① 是什么</text>
+          <text x="105" y="55" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">先解释概念</text>
+          <!-- 箭头 -->
+          <line x1="195" y1="38" x2="225" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow)"/>
+          <!-- 第二步 -->
+          <rect x="230" y="8" width="170" height="60" rx="10" fill="#FFF7E6" stroke="#FA8C16" stroke-width="1.5"/>
+          <text x="315" y="36" font-size="18" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">② 为什么</text>
+          <text x="315" y="55" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">再说重要性</text>
+          <!-- 箭头 -->
+          <line x1="405" y1="38" x2="435" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow)"/>
+          <!-- 第三步 -->
+          <rect x="440" y="8" width="170" height="60" rx="10" fill="#F0FFF0" stroke="#52C41A" stroke-width="1.5"/>
+          <text x="525" y="36" font-size="18" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">③ 怎么做</text>
+          <text x="525" y="55" font-size="11" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">用自己经历举例</text>
+          <defs>
+            <marker id="fwArrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 Z" fill="#d9d9d9"/>
+            </marker>
+          </defs>
+        </svg>
+        <div style="margin-top:8px;padding:10px 14px;background:#f8f9fa;border-radius:6px;font-size:13px;line-height:1.8;">
+          <strong>💡 直接用：</strong>拿到题先快速判断属于哪一类→套口诀→举自己的例子（叠衣服、洗手、搭积木、摆椅子等）
+        </div>
+      </div>
+    </div>
+
+    <!-- 框架2 -->
+    <div class="fw-card">
+      <div class="fw-header" style="background:var(--accent-light);color:var(--accent);">
+        <span>⚡</span> 框架2：应急应变题
+        <span style="margin-left:auto;font-weight:400;font-size:13px;">口诀：<strong style="font-size:15px;letter-spacing:6px;">停 · 做 · 说 · 防</strong></span>
+      </div>
+      <div class="fw-body">
+        <svg viewBox="0 0 620 80" style="width:100%;height:auto;">
+          <rect x="20" y="8" width="120" height="60" rx="10" fill="#FFE8E8" stroke="#FF6B6B" stroke-width="1.5"/>
+          <text x="80" y="34" font-size="20" font-weight="700" fill="#FF6B6B" text-anchor="middle" font-family="-apple-system,sans-serif">停</text>
+          <text x="80" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">先停下来</text>
+
+          <line x1="145" y1="38" x2="175" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow2)"/>
+
+          <rect x="180" y="8" width="120" height="60" rx="10" fill="#FFF7E6" stroke="#FA8C16" stroke-width="1.5"/>
+          <text x="240" y="34" font-size="20" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">做</text>
+          <text x="240" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">做处理</text>
+
+          <line x1="305" y1="38" x2="335" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow2)"/>
+
+          <rect x="340" y="8" width="120" height="60" rx="10" fill="#F0FFF0" stroke="#52C41A" stroke-width="1.5"/>
+          <text x="400" y="34" font-size="20" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">说</text>
+          <text x="400" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">告诉家长</text>
+
+          <line x1="465" y1="38" x2="495" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow2)"/>
+
+          <rect x="500" y="8" width="110" height="60" rx="10" fill="#F0E8FF" stroke="#722ED1" stroke-width="1.5"/>
+          <text x="555" y="34" font-size="20" font-weight="700" fill="#722ED1" text-anchor="middle" font-family="-apple-system,sans-serif">防</text>
+          <text x="555" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">预防再发生</text>
+
+          <defs>
+            <marker id="fwArrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 Z" fill="#d9d9d9"/>
+            </marker>
+          </defs>
+        </svg>
+        <div style="margin-top:8px;padding:10px 14px;background:#f8f9fa;border-radius:6px;font-size:13px;line-height:1.8;">
+          <strong>💡 直接用：</strong>孩子受伤了、打架了、突然哭了 → 先确保安全（停）→ 马上处理（做）→ 跟家长沟通（说）→ 以后怎么避免（防）
+        </div>
+      </div>
+    </div>
+
+    <!-- 框架3 -->
+    <div class="fw-card">
+      <div class="fw-header" style="background:var(--green-light);color:var(--green);">
+        <span>🤝</span> 框架3：人际关系题
+        <span style="margin-left:auto;font-weight:400;font-size:13px;">口诀：<strong style="font-size:15px;letter-spacing:6px;">听 · 懂 · 说 · 做</strong></span>
+      </div>
+      <div class="fw-body">
+        <svg viewBox="0 0 620 80" style="width:100%;height:auto;">
+          <rect x="20" y="8" width="120" height="60" rx="10" fill="#E8F0FE" stroke="#4A90D9" stroke-width="1.5"/>
+          <text x="80" y="34" font-size="20" font-weight="700" fill="#4A90D9" text-anchor="middle" font-family="-apple-system,sans-serif">听</text>
+          <text x="80" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">先听对方说</text>
+
+          <line x1="145" y1="38" x2="175" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow3)"/>
+
+          <rect x="180" y="8" width="120" height="60" rx="10" fill="#FFF7E6" stroke="#FA8C16" stroke-width="1.5"/>
+          <text x="240" y="34" font-size="20" font-weight="700" fill="#FA8C16" text-anchor="middle" font-family="-apple-system,sans-serif">懂</text>
+          <text x="240" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">表示理解</text>
+
+          <line x1="305" y1="38" x2="335" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow3)"/>
+
+          <rect x="340" y="8" width="120" height="60" rx="10" fill="#F0FFF0" stroke="#52C41A" stroke-width="1.5"/>
+          <text x="400" y="34" font-size="20" font-weight="700" fill="#52C41A" text-anchor="middle" font-family="-apple-system,sans-serif">说</text>
+          <text x="400" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">说明原因</text>
+
+          <line x1="465" y1="38" x2="495" y2="38" stroke="#d9d9d9" stroke-width="2" marker-end="url(#fwArrow3)"/>
+
+          <rect x="500" y="8" width="110" height="60" rx="10" fill="#F0E8FF" stroke="#722ED1" stroke-width="1.5"/>
+          <text x="555" y="34" font-size="20" font-weight="700" fill="#722ED1" text-anchor="middle" font-family="-apple-system,sans-serif">做</text>
+          <text x="555" y="54" font-size="10" fill="#333" text-anchor="middle" font-family="-apple-system,sans-serif">给出方案</text>
+
+          <defs>
+            <marker id="fwArrow3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0,0 L10,5 L0,10 Z" fill="#d9d9d9"/>
+            </marker>
+          </defs>
+        </svg>
+        <div style="margin-top:8px;padding:10px 14px;background:#f8f9fa;border-radius:6px;font-size:13px;line-height:1.8;">
+          <strong>💡 直接用：</strong>家长有意见、同事有分歧、领导有批评 → 先听不反驳（听）→ "我理解您的担心"（懂）→ 解释原因（说）→ 给出解决办法（做）
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第五部分：每日学习方案 SVG -->
+<!-- ============================================================ -->
+<div class="section" data-category="plan">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:var(--gold-light);">📅</span>
+      每日学习方案
+      <span class="badge">每天45分钟</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <!-- SVG Banner -->
+    <svg class="section-banner" viewBox="0 0 700 90" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="90" rx="10" fill="url(#planGrad)"/>
+      <defs>
+        <linearGradient id="planGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FFFBE6"/>
+          <stop offset="100%" stop-color="#FFF7E6"/>
+        </linearGradient>
+      </defs>
+      <!-- 时钟 -->
+      <circle cx="60" cy="45" r="20" fill="#FAAD14" opacity="0.15" stroke="#FAAD14" stroke-width="1.5"/>
+      <line x1="60" y1="45" x2="60" y2="32" stroke="#FAAD14" stroke-width="2"/>
+      <line x1="60" y1="45" x2="70" y2="48" stroke="#FAAD14" stroke-width="2"/>
+      <!-- 日历 -->
+      <rect x="110" y="28" width="24" height="24" rx="3" fill="#FA8C16" opacity="0.15" stroke="#FA8C16" stroke-width="1.5"/>
+      <line x1="115" y1="35" x2="129" y2="35" stroke="#FA8C16" stroke-width="1"/>
+      <line x1="115" y1="40" x2="129" y2="40" stroke="#FA8C16" stroke-width="1"/>
+      <line x1="115" y1="45" x2="129" y2="45" stroke="#FA8C16" stroke-width="1"/>
+      <!-- 文字 -->
+      <text x="170" y="38" font-size="15" font-weight="700" fill="#D46B08" font-family="-apple-system,sans-serif">每天45分钟，坚持到面试</text>
+      <text x="170" y="58" font-size="13" fill="#FA8C16" opacity="0.8" font-family="-apple-system,sans-serif">早晨读时政 → 上午练答题 → 下午画简笔 → 睡前回顾</text>
+      <text x="170" y="78" font-size="11" fill="#FA8C16" opacity="0.5" font-family="-apple-system,sans-serif">周末模拟面试 · 每天进步一点点</text>
+    </svg>
+
+    <div class="plan-grid">
+      <div class="plan-row">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <div class="time-icon">🌅</div>
+        <div class="content">
+          <div class="plan-title">早晨 · 读时政</div>
+          <div class="plan-desc">读一遍时政必背关键词（10道题各一遍）</div>
+        </div>
+        <div class="duration">10分钟</div>
+      </div>
+      <div class="plan-row">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <div class="time-icon">☀️</div>
+        <div class="content">
+          <div class="plan-title">上午 · 练答题</div>
+          <div class="plan-desc">开口练1道理论题+1道时政题（录音，自己听）</div>
+        </div>
+        <div class="duration">20分钟</div>
+      </div>
+      <div class="plan-row">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <div class="time-icon">🌤</div>
+        <div class="content">
+          <div class="plan-title">下午 · 画简笔</div>
+          <div class="plan-desc">画1幅简笔画（限时10分钟，使用上面的计时器）</div>
+        </div>
+        <div class="duration">10分钟</div>
+      </div>
+      <div class="plan-row">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <div class="time-icon">🌙</div>
+        <div class="content">
+          <div class="plan-title">睡前 · 回顾</div>
+          <div class="plan-desc">回顾当天练的题，看关键词能不能想起来</div>
+        </div>
+        <div class="duration">5分钟</div>
+      </div>
+      <div class="plan-row" style="border-bottom:none;">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <div class="time-icon">📆</div>
+        <div class="content">
+          <div class="plan-title">周末 · 模拟面试</div>
+          <div class="plan-desc">找人模拟完整面试（抽3道题，8分钟内答完）</div>
+        </div>
+        <div class="duration">30分钟</div>
+      </div>
+    </div>
+
+    <!-- 学习小贴士 -->
+    <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <div style="padding:12px 14px;background:var(--primary-light);border-radius:var(--radius-sm);font-size:12px;line-height:1.7;">
+        <strong style="color:var(--primary);font-size:13px;">✅ 正确的刷题方式</strong><br>
+        先看题 → 自己说 → 再看答案 → 标记掌握
+      </div>
+      <div style="padding:12px 14px;background:var(--accent-light);border-radius:var(--radius-sm);font-size:12px;line-height:1.7;">
+        <strong style="color:var(--accent);font-size:13px;">⚠️ 常见错误</strong><br>
+        光看不练、背整段答案、不开口说出来
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<div class="footer">
+  <span class="footer-icon">🍀</span>
+  龙岗区幼师面试备考 · 张某定制版<br>
+  祝面试顺利，成功上岸！
+</div>
+
+<!-- ============================================================ -->
+<!-- JAVASCRIPT -->
+<!-- ============================================================ -->
+<script>
+// ===== Toggle Sections =====
+function toggleSection(header) {
+  header.classList.toggle('collapsed');
+  const cat = header.closest('.section').dataset.category;
+  localStorage.setItem('yjCollapsed_' + cat, header.classList.contains('collapsed'));
+}
+
+// ===== Toggle Cards =====
+function toggleCard(questionEl) {
+  const card = questionEl.closest('.card');
+  card.classList.toggle('open');
+}
+
+// ===== Progress Dots =====
+function toggleProgress(dot) {
+  dot.classList.toggle('done');
+  if (dot.classList.contains('done')) {
+    dot.style.transform = 'scale(1.2)';
+    setTimeout(() => dot.style.transform = '', 200);
+  }
+  updateProgressDisplay();
+  saveProgress();
+}
+
+function updateProgressDisplay() {
+  const total = document.querySelectorAll('.card').length;
+  const done = document.querySelectorAll('.progress-dot.done').length;
+  const countEl = document.getElementById('progressCount');
+  const pctEl = document.getElementById('progressPct');
+  const fillEl = document.getElementById('progressFill');
+  if (countEl) countEl.textContent = done;
+  if (pctEl) pctEl.textContent = '(' + Math.round(done / total * 100) + '%)';
+  if (fillEl) fillEl.style.width = (done / total * 100) + '%';
+}
+
+// ===== Save/Load Progress =====
+function saveProgress() {
+  const state = {};
+  document.querySelectorAll('.card').forEach(card => {
+    if (card.dataset.id) {
+      const dot = card.querySelector('.progress-dot');
+      state[card.dataset.id] = dot ? dot.classList.contains('done') : false;
+    }
+  });
+  localStorage.setItem('yjProgress', JSON.stringify(state));
+}
+
+function loadProgress() {
+  const saved = localStorage.getItem('yjProgress');
+  if (!saved) return;
+  try {
+    const state = JSON.parse(saved);
+    document.querySelectorAll('.card').forEach(card => {
+      if (card.dataset.id && state[card.dataset.id]) {
+        const dot = card.querySelector('.progress-dot');
+        if (dot) dot.classList.add('done');
+      }
+    });
+  } catch(e) {}
+  updateProgressDisplay();
+}
+
+// ===== Expand / Collapse All =====
+function expandAll() {
+  document.querySelectorAll('.card').forEach(c => c.classList.add('open'));
+}
+function collapseAll() {
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('open'));
+}
+
+// ===== Filter =====
+document.addEventListener('DOMContentLoaded', function() {
+  const filterBtns = document.querySelectorAll('#filterTabs .btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('btn-active'));
+      this.classList.add('btn-active');
+      const filter = this.dataset.filter;
+      document.querySelectorAll('.section').forEach(section => {
+        if (filter === 'all') {
+          section.style.display = '';
+        } else {
+          const cat = section.dataset.category;
+          section.style.display = cat === filter ? '' : 'none';
+        }
+      });
+    });
+  });
+});
+
+// ===== Timer =====
+let timerInterval = null;
+let timerSeconds = 600;
+let timerRunning = false;
+
+function formatTime(sec) {
+  const m = Math.floor(Math.abs(sec) / 60);
+  const s = Math.abs(sec) % 60;
+  return String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+}
+
+function updateTimerDisplay() {
+  const display = document.getElementById('timerDisplay');
+  if (!display) return;
+  display.textContent = formatTime(timerSeconds);
+  display.className = 'timer-display';
+  if (timerRunning) {
+    if (timerSeconds <= 0) display.classList.add('over');
+    else display.classList.add('running');
+  }
+}
+
+function startTimer() {
+  if (timerInterval) return;
+  timerRunning = true;
+  document.getElementById('timerToggle').textContent = '⏸ 暂停';
+  timerInterval = setInterval(() => {
+    timerSeconds--;
+    updateTimerDisplay();
+    if (timerSeconds <= 0) {
+      clearInterval(timerInterval);
+      timerInterval = null;
+      timerRunning = false;
+      document.getElementById('timerToggle').textContent = '▶ 开始';
+      updateTimerDisplay();
+    }
+  }, 1000);
+}
+
+function stopTimer() {
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+  timerRunning = false;
+  document.getElementById('timerToggle').textContent = '▶ 开始';
+  updateTimerDisplay();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleBtn = document.getElementById('timerToggle');
+  const resetBtn = document.getElementById('timerReset');
+  const durationSelect = document.getElementById('timerDuration');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function() {
+      if (timerRunning) stopTimer();
+      else startTimer();
+    });
+  }
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function() {
+      stopTimer();
+      const mins = parseInt(durationSelect.value);
+      timerSeconds = mins * 60;
+      updateTimerDisplay();
+    });
+  }
+  if (durationSelect) {
+    durationSelect.addEventListener('change', function() {
+      if (!timerRunning) {
+        timerSeconds = parseInt(this.value) * 60;
+        updateTimerDisplay();
+      }
+    });
+  }
+});
+
+// ===== Init =====
+document.addEventListener('DOMContentLoaded', function() {
+  const totalCards = document.querySelectorAll('.card').length;
+  const tc = document.getElementById('totalCount');
+  if (tc) tc.textContent = totalCards;
+
+  loadProgress();
+
+  // Restore section collapsed states
+  document.querySelectorAll('.section-header').forEach(h => {
+    const cat = h.closest('.section').dataset.category;
+    if (localStorage.getItem('yjCollapsed_' + cat) === 'true') {
+      h.classList.add('collapsed');
+    }
+  });
+
+  // Expand/Collapse buttons
+  document.getElementById('expandAllBtn').addEventListener('click', expandAll);
+  document.getElementById('collapseAllBtn').addEventListener('click', collapseAll);
+  document.getElementById('resetProgressBtn').addEventListener('click', function() {
+    if (confirm('确定要重置所有学习进度吗？')) {
+      document.querySelectorAll('.progress-dot').forEach(d => d.classList.remove('done'));
+      localStorage.removeItem('yjProgress');
+      updateProgressDisplay();
+    }
+  });
+
+  // Update timer display
+  updateTimerDisplay();
+});
+</script>
+
+</body>
+</html>
