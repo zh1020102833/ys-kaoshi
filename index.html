@@ -590,7 +590,7 @@
 <!-- ============================================================ -->
 <div class="header">
   <h1>🍎 龙岗区幼师面试备考</h1>
-  <div class="subtitle">张某定制版 · 30道核心题 + 绘画 + 框架 + 每日计划</div>
+  <div class="subtitle">张某定制版 · 40道核心题 + 绘画 + 框架 + 每日计划</div>
   <div class="badge-row">
     <span>📖 10道理论题</span>
     <span>🏛 10道时政题</span>
@@ -604,7 +604,7 @@
 <!-- ============================================================ -->
 <div class="top-bar">
   <div class="stat">
-    📊 掌握进度 <strong id="progressCount">0</strong>/<strong id="totalCount">30</strong>
+    📊 掌握进度 <strong id="progressCount">0</strong>/<strong id="totalCount">40</strong>
     <span id="progressPct" style="color:#999;font-size:12px;">(0%)</span>
     <div class="progress-bar-bg">
       <div class="progress-bar-fill" id="progressFill"></div>
@@ -624,6 +624,9 @@
   <button class="btn btn-active" data-filter="all">📚 全部</button>
   <button class="btn" data-filter="theory">📖 理论题</button>
   <button class="btn" data-filter="shizheng">🏛 时政题</button>
+  <button class="btn" data-filter="yingji">⚡ 应急应变</button>
+  <button class="btn" data-filter="parent">🤝 家长沟通</button>
+  <button class="btn" data-filter="additional">💡 补充观点</button>
   <button class="btn" data-filter="drawing">🎨 绘画</button>
   <button class="btn" data-filter="framework">🧩 框架</button>
   <button class="btn" data-filter="plan">📅 每日计划</button>
@@ -1245,7 +1248,606 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- 第三部分：绘画备考 SVG -->
+<!-- 第三部分：应急应变题 -->
+<!-- ============================================================ -->
+<div class="section" data-category="yingji">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:#FFE8E8;">⚡</span>
+      应急应变题
+      <span class="badge">7道高频题</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <svg class="section-banner" viewBox="0 0 700 100" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#yingjiGrad)"/>
+      <defs>
+        <linearGradient id="yingjiGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#FFE8E8"/>
+          <stop offset="100%" stop-color="#FFD6D6"/>
+        </linearGradient>
+      </defs>
+      <circle cx="120" cy="50" r="18" fill="#FF6B6B" opacity="0.2"/>
+      <circle cx="120" cy="42" r="7" fill="#FF6B6B"/>
+      <rect x="112" y="51" width="16" height="14" rx="3" fill="#FF6B6B" opacity="0.7"/>
+      <text x="280" y="42" font-size="15" font-weight="700" fill="#CC3333" font-family="-apple-system,sans-serif">停·做·说·防 · 先稳全局再处理</text>
+      <text x="280" y="64" font-size="13" fill="#FF6B6B" opacity="0.8" font-family="-apple-system,sans-serif">保证安全 → 处理问题 → 安抚情绪 → 预防再发生</text>
+      <text x="280" y="82" font-size="11" fill="#FF6B6B" opacity="0.5" font-family="-apple-system,sans-serif">点击题目展开答案 · 圆点标记已掌握</text>
+      <text x="640" y="50" font-size="24" opacity="0.3">⚡</text>
+      <text x="620" y="75" font-size="16" opacity="0.2">⚡</text>
+    </svg>
+
+    <div class="card" data-id="yingji-1">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">1</span>
+        <span class="q-text">在班级互动中，有的幼儿吐了，同时引起了其他幼儿的混乱，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            遇到这种情况，我会先稳住全局。第一步，我先把呕吐的孩子带到一边，帮他清理干净，安抚他的情绪，看看他有没有其他不舒服。第二步，同时请配班老师带着其他孩子玩个游戏或者放个儿歌，把注意力转开，防止混乱扩大。第三步，如果是吃饭后呕吐，我会保留呕吐物样本，给保健医生看一下是不是食物问题；如果只是孩子身体不舒服，就通知家长来接。最后，这件事处理完了我会跟班上的孩子简单说一下，小朋友身体不舒服是正常的，我们要关心他，不要害怕。平时我当保育员也会注意观察每个孩子的身体状况，发现有不对劲的及时处理。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">先安抚呕吐的</span>
+          <span class="tag">配班稳住其他人</span>
+          <span class="tag">检查是否食物问题</span>
+          <span class="tag">通知家长</span>
+          <span class="tag">平时多观察</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-2">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">2</span>
+        <span class="q-text">幼儿在排队的时候，踩到了另外一名幼儿的脚，被踩幼儿大叫起来，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            排队踩到脚在幼儿园很常见，我会快速处理。第一步，先马上过去看看被踩的孩子有没有受伤，如果只是踩了一下没有红肿，就安抚他说"没关系，小朋友不是故意的"。第二步，让踩人的孩子道个歉，教他说"对不起，我不是故意的"。第三步，借这个机会跟全班讲一下排队的安全，比如排队的时候要跟前面的人保持一点距离，眼睛看前面，慢慢走不推挤。我在保育工作中经常带孩子们排队去户外、去洗手间，平时就会跟他们强调排队要"手放好、脚跟稳、不说话"，这样能减少意外。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">先看有没有受伤</span>
+          <span class="tag">教道歉</span>
+          <span class="tag">借机讲排队规则</span>
+          <span class="tag">平时养成习惯</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-3">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">3</span>
+        <span class="q-text">有个幼儿在幼儿园摔跤了，家长要求看监控，你会怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            首先我理解家长的心情，孩子摔了肯定会心疼着急。我会这样做：第一，先跟家长说清楚当时的情况——孩子怎么摔的、摔在哪儿、我们第一时间做了哪些处理（有没有消毒、有没有通知保健医），态度要诚恳。第二，如果孩子没有大碍，就跟家长说"孩子已经没事了，我们也做了处理，您可以放心"，同时给家长看看伤口恢复情况。第三，如果家长坚持要看监控，那就配合她看，不阻拦，因为监控能还原事实，也能证明老师有没有尽责。最重要的是平时做好安全防护，减少孩子受伤的可能。我当保育员最注重的就是活动前检查场地和器材，排除安全隐患。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">理解家长心情</span>
+          <span class="tag">说清楚情况和处理经过</span>
+          <span class="tag">没大碍就安抚</span>
+          <span class="tag">要看监控就配合</span>
+          <span class="tag">平时做好安全防护</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-4">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">4</span>
+        <span class="q-text">中班的明明经常攻击其他小朋友。作为老师，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            遇到爱打人的孩子，我不会简单地批评他，而是想他为什么打人。第一，观察他打人的原因，是想要别人的玩具、还是不会表达、还是想引起老师注意。第二，教他用语言代替动手，比如教他说"我也想玩这个""请你让一下"，语言会说了动手就少了。第三，当他有好的行为时及时表扬，比如"你今天跟小朋友分享了玩具，真棒"，强化正面行为。第四，跟家长沟通，了解孩子在家的情况，有没有模仿打人的场景。我工作中发现，有些孩子打人其实是因为他不会跟别人交往，需要老师一点一点教他。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">先找原因</span>
+          <span class="tag">教用语言代替动手</span>
+          <span class="tag">正面行为多表扬</span>
+          <span class="tag">跟家长沟通</span>
+          <span class="tag">教社交方法</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-5">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">5</span>
+        <span class="q-text">幼儿情绪激动的时候，满地打滚，你越劝他，他越不听，怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            孩子情绪激动满地打滚的时候，其实你越说他越来劲。我的做法是：第一，先确保环境安全，周围没有尖锐的东西、桌子角包好，然后让他发泄一下，不用强行拉他。第二，在旁边安静陪着，不批评也不哄，等他情绪稍微平复了再说话。第三，等他安静下来了，递杯水或者转移注意力，比如"我们去看看窗外的小鸟好不好"。第四，等他完全平静了再跟他聊刚才的事，教他生气的时候可以用什么方式表达。我当保育员带过几个脾气大的孩子，发现等他冷静了再沟通效果才好，越哄越劝反而闹得更久。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">确保安全</span>
+          <span class="tag">让他发泄不强行拉</span>
+          <span class="tag">安静陪着</span>
+          <span class="tag">等平复了再沟通</span>
+          <span class="tag">教正确表达方式</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-6">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">6</span>
+        <span class="q-text">你在上课时，有名幼儿尿裤子了，你该怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            孩子尿裤子在幼儿园很常见，特别是小班和中班。我会这样处理：第一，先不动声色地走到孩子身边，小声跟他说"没关系，老师带你去换一下"，避免在全班面前说他尿裤子了，保护他的自尊心。第二，带他到卫生间，帮他换好备用的干净裤子，如果有备用衣服就更好了。第三，安抚他说"小朋友有时候来不及去厕所是正常的，下次想上厕所要赶紧跟老师说"。第四，跟其他孩子不用多说，就说"某某去换衣服了"就行。我当保育员在班上每天都会检查备用衣物，确保每个孩子都有换洗的放在幼儿园。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不动声色保护自尊</span>
+          <span class="tag">小声带孩子去换</span>
+          <span class="tag">安抚说正常</span>
+          <span class="tag">备用衣物准备好</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="yingji-7">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">7</span>
+        <span class="q-text">幼儿在幼儿园不挑食，父母反映幼儿回到家挑食，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这种情况说明孩子在幼儿园和家里的环境不一样。我会这样做：第一，跟家长沟通了解孩子在家吃什么、怎么吃的，是不是追着喂、是不是孩子想吃什么就给什么。第二，建议家长在家也采用幼儿园的方法，比如大家一起吃饭、鼓励孩子自己吃、不强迫不追喂。第三，可以给家长一些具体建议，比如做菜的时候颜色搭配好看一点、把菜切成有趣的形状、用故事的方式引导孩子吃。第四，在幼儿园继续鼓励孩子不挑食的好习惯，让他当"小小榜样"，回家后他也更愿意保持这个习惯。我在保育工作中观察到，孩子其实在集体环境里吃得更好，因为看到别的小朋友都在吃他也会跟着吃。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">理解家里和幼儿园不同</span>
+          <span class="tag">建议家长用幼儿园方法</span>
+          <span class="tag">给具体建议</span>
+          <span class="tag">在幼儿园继续鼓励</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第四部分：家长沟通题 -->
+<!-- ============================================================ -->
+<div class="section" data-category="parent">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:#E6FFFB;">🤝</span>
+      家长沟通题
+      <span class="badge">7道必练题</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <svg class="section-banner" viewBox="0 0 700 100" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#parentGrad)"/>
+      <defs>
+        <linearGradient id="parentGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#E6FFFB"/>
+          <stop offset="100%" stop-color="#D6FFF5"/>
+        </linearGradient>
+      </defs>
+      <circle cx="120" cy="50" r="18" fill="#13C2C2" opacity="0.2"/>
+      <circle cx="120" cy="42" r="7" fill="#13C2C2"/>
+      <rect x="112" y="51" width="16" height="14" rx="3" fill="#13C2C2" opacity="0.7"/>
+      <text x="280" y="42" font-size="15" font-weight="700" fill="#0E8A8A" font-family="-apple-system,sans-serif">听·懂·说·做 · 理解共情再沟通</text>
+      <text x="280" y="64" font-size="13" fill="#13C2C2" opacity="0.8" font-family="-apple-system,sans-serif">先听不反驳 → 表示理解 → 解释原因 → 给出方案</text>
+      <text x="280" y="82" font-size="11" fill="#13C2C2" opacity="0.5" font-family="-apple-system,sans-serif">点击题目展开答案 · 圆点标记已掌握</text>
+      <text x="640" y="50" font-size="24" opacity="0.3">🤝</text>
+      <text x="620" y="75" font-size="16" opacity="0.2">🤝</text>
+    </svg>
+
+    <div class="card" data-id="parent-1">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">1</span>
+        <span class="q-text">父母认为送孩子来幼儿园学习的，不能理解为什么以游戏为主，你怎么处理</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            家长有这种想法很正常，因为很多家长对幼儿园教育的理解停留在"学知识"上。我会这样跟家长沟通：第一，告诉他游戏不是瞎玩，孩子在游戏中其实在学很多东西。比如搭积木在学空间和平衡、角色扮演在学社交和语言。第二，用具体例子说明，比如"您家孩子今天在建构区搭了一座桥，他学会了怎么让桥不倒，还跟小朋友合作完成的"。第三，告诉他国家规定幼儿园就是以游戏为基本活动，因为游戏最适合幼儿的年龄特点，上小学后才开始系统学习。第四，邀请家长来园参加半日开放活动，亲眼看看孩子在游戏中的学习。沟通的时候态度要耐心，不要觉得家长不懂，而是要让他看到效果。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">理解家长的担心</span>
+          <span class="tag">游戏不是瞎玩</span>
+          <span class="tag">用具体例子说明学到了什么</span>
+          <span class="tag">政策说游戏是基本活动</span>
+          <span class="tag">邀家长来看</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-2">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">2</span>
+        <span class="q-text">家长觉得你太年轻，没生过孩子，没经验，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            家长有这样的顾虑我可以理解。我会这样回应：第一，态度上不生气也不辩解，先肯定家长的关心，说"您说得对，我确实年轻，没有当妈妈的经验"。第二，但接着要自信地说"不过我在幼儿园工作了几年，带过大中小班，积累了丰富的带班经验，照顾孩子很有心得"。第三，用具体事例证明自己，比如"上次有个孩子入园焦虑哭了一个月，我用了什么方法让他慢慢适应了"，家长一听就知道你确实有经验。第四，在日常工作中多跟家长沟通孩子的点滴进步，让家长看到你的负责和用心，时间长了家长自然就信任了。我从保育员做到现在也遇到过这种情况，是用实际行动赢得家长信任的。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">理解但自信</span>
+          <span class="tag">没当妈但有带班经验</span>
+          <span class="tag">用具体事例证明</span>
+          <span class="tag">多沟通让家长看到用心</span>
+          <span class="tag">实际行动赢信任</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-3">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">3</span>
+        <span class="q-text">你班里的小朋友小红不喜欢喝水，非要喝饮料。作为教师，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            孩子不爱喝水爱喝饮料是很多家长头疼的问题。我会这样做：第一，在班上做好引导，用孩子能懂的方式告诉他喝水的好处，比如"喝水可以让小肚子舒服、让嗓子润润的"，也可以做一个小实验，用两盆花对比，一盆浇水一盆浇饮料，直观看到喝水的重要。第二，在饮水区做趣味设计，比如贴一个喝水记录表，喝一杯水贴一个贴纸，集满有奖励。第三，跟家长沟通达成一致：在家也少给孩子买饮料、家长自己也多喝水做榜样、家里的水可以用水果片泡一下增加味道。我自己在保育工作中发现，孩子不喝水很多时候是忘了或者水没味道不想喝，把喝水变得有趣他就愿意了。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">用孩子懂的方式讲道理</span>
+          <span class="tag">趣味饮水记录表</span>
+          <span class="tag">跟家长配合</span>
+          <span class="tag">家长做榜样</span>
+          <span class="tag">泡水果片增加味道</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-4">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">4</span>
+        <span class="q-text">家长不想让儿童穿园服，说没个性，没审美，怕歪曲孩子的审美观，你怎么看</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            家长的想法我理解，但我会这样跟他说：第一，园服不是为了抹杀个性，而是为了方便孩子活动。幼儿园每天有很多跑跳爬的户外活动，园服宽松舒适，比孩子穿自己的漂亮衣服更适合。第二，园服还有一个好处是统一，做早操、集体活动的时候看起来整齐，孩子也有集体归属感。第三，培养审美不是通过穿什么衣服来实现的，而是通过美术活动、环境布置、欣赏大自然来培养的。第四，如果家长实在觉得园服款式单调，我也可以建议家委会跟园里沟通优化款式。之前我们班也有家长有类似想法，我跟她聊了之后她接受了，因为孩子穿园服活动确实方便。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">园服方便活动</span>
+          <span class="tag">有集体归属感</span>
+          <span class="tag">审美通过美术和大自然培养</span>
+          <span class="tag">沟通优化款式</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-5">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">5</span>
+        <span class="q-text">家长建议幼儿园加一些小学化的课程，想让你教幼儿拼音汉字，你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            这个问题很多幼儿园老师都会遇到。我会坚持原则、耐心沟通。第一，跟家长解释为什么幼儿园不能提前学拼音和汉字，因为孩子的认知发展还没到那个阶段，强行学反而容易让孩子产生厌学情绪。第二，告诉家长幼儿园现在在做的是更重要的入学准备，培养的是孩子的专注力、自理能力、任务意识和社交能力，这些才是上小学真正需要的。第三，可以用例子说明，比如"我们现在让孩子自己整理书包、轮流做值日生，这就是在培养他上小学需要的独立能力"。第四，如果家长还是焦虑，可以推荐一些适合在家做的亲子阅读、益智游戏，比教拼音更有效。我在保育工作中深有体会，自理能力好的孩子上小学适应得更快。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">坚持不小学化</span>
+          <span class="tag">解释认知发展还没到</span>
+          <span class="tag">培养专注力和自理能力才是真准备</span>
+          <span class="tag">推荐有效替代方案</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-6">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">6</span>
+        <span class="q-text">幼儿在家讲脏话，新老师知道后，却以工作很忙、没时间为由不教育幼儿，你怎么看</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            对于这个新老师的做法，我是不认同的。教育孩子不能分时间和场合。第一，孩子讲脏话不管是在幼儿园还是在家里，老师都有责任教育。家长告诉我们了，说明家长信任老师、希望老师帮忙。第二，教育孩子讲礼貌本身就是老师的工作内容之一，不能说忙就不管。第三，我会这样处理：私下跟孩子聊，告诉他"这句话不好听，说了别人会不开心"，教他换一种表达方式。同时跟家长沟通，一起引导孩子。第四，如果我是这位新老师的同事，我会善意地提醒她，帮助她认识到教育无小事。我自己在工作中发现，孩子讲脏话很多时候是模仿大人或者电视，需要老师和家长一起引导。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">老师有责任教育</span>
+          <span class="tag">不分时间和场合</span>
+          <span class="tag">教换一种表达方式</span>
+          <span class="tag">跟家长一起引导</span>
+          <span class="tag">善意提醒同事</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="parent-7">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">7</span>
+        <span class="q-text">家长说孩子既然上幼儿园了，教育责任就完全托付给你了。你怎么办</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            我会肯定家长的信任，但也要告诉他教育需要家园合作。第一，感谢家长的信任，说"感谢您这么放心把孩子交给我们，我们一定会尽最大努力照顾好他"。第二，同时告诉家长，幼儿园教育和家庭教育是互补的，缺一不可。孩子在幼儿园学到的习惯，回家需要家长巩固才能变成真正的好习惯。比如在幼儿园学了叠衣服和洗手七步法，回家如果家长不让他自己叠、不督促他洗手，那就白学了。第三，给家长一些在家配合的小任务，比如让孩子在家也做点力所能及的小事、跟孩子聊一聊在幼儿园学了什么。家园配合得好，孩子的进步才快。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">感谢信任</span>
+          <span class="tag">家园配合最重要</span>
+          <span class="tag">学校学+家里练=好习惯</span>
+          <span class="tag">给家长具体配合方法</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第五部分：补充观点题 -->
+<!-- ============================================================ -->
+<div class="section" data-category="additional">
+  <div class="section-header" onclick="toggleSection(this)">
+    <h2>
+      <span class="icon-badge" style="background:#F0E8FF;">💡</span>
+      补充观点题
+      <span class="badge">6道精选</span>
+    </h2>
+    <span class="toggle-icon">▼</span>
+  </div>
+  <div class="section-body">
+
+    <svg class="section-banner" viewBox="0 0 700 100" preserveAspectRatio="xMidYMid meet">
+      <rect width="700" height="100" rx="10" fill="url(#additionalGrad)"/>
+      <defs>
+        <linearGradient id="additionalGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#F0E8FF"/>
+          <stop offset="100%" stop-color="#E8D6FF"/>
+        </linearGradient>
+      </defs>
+      <circle cx="120" cy="50" r="18" fill="#722ED1" opacity="0.2"/>
+      <circle cx="120" cy="42" r="7" fill="#722ED1"/>
+      <rect x="112" y="51" width="16" height="14" rx="3" fill="#722ED1" opacity="0.7"/>
+      <text x="280" y="42" font-size="15" font-weight="700" fill="#5B1E9E" font-family="-apple-system,sans-serif">是·为·怎 · 结合经历说透观点</text>
+      <text x="280" y="64" font-size="13" fill="#722ED1" opacity="0.8" font-family="-apple-system,sans-serif">先表态 → 说理由 → 举自己的例子 → 总结</text>
+      <text x="280" y="82" font-size="11" fill="#722ED1" opacity="0.5" font-family="-apple-system,sans-serif">点击题目展开答案 · 圆点标记已掌握</text>
+      <text x="640" y="50" font-size="24" opacity="0.3">💡</text>
+      <text x="620" y="75" font-size="16" opacity="0.2">💡</text>
+    </svg>
+
+    <div class="card" data-id="additional-1">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">1</span>
+        <span class="q-text">有人说幼儿园工作繁琐，教师就像保姆。对此，你怎么看</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            我不同意这种说法。幼儿园的工作表面上看确实有喂饭、换衣服、擦屁股这些看起来像保姆做的事情，但本质完全不同。第一，我们的每一个动作都是有教育目的的。比如喂饭不只是让他吃饱，是在培养良好的进餐习惯；换衣服不是单纯的换，是在教孩子认识衣服的前后左右。第二，幼儿园老师是具备专业知识和技能的教育工作者，不是看孩子的。我知道怎么观察孩子的发展、怎么设计适合他的活动、怎么跟有特殊需要的孩子沟通，这些不是保姆能做得到的。第三，我自己当保育员的经历让我特别能理解这份工作的专业性。做保育不是简单的照顾，是把教育渗透在生活的每一个环节里。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不同意</span>
+          <span class="tag">表面像保姆实质是教育</span>
+          <span class="tag">每件事都有教育目的</span>
+          <span class="tag">我们是专业的教育工作者</span>
+          <span class="tag">保育中有教育</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="additional-2">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">2</span>
+        <span class="q-text">你为什么选择当一名幼儿园教师</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            我选择当幼儿园教师，主要是三个原因。第一，我是真的喜欢孩子。我在幼儿园工作了几年，跟孩子在一起的时候最开心，看到他们进步我就特别有成就感。第二，我在工作中找到了价值和意义。我之前做保育员，有一次教一个孩子叠衣服，他花了很长时间终于学会了，特别自豪地跟他妈妈说"妈妈我会叠衣服了"，那一刻我真的觉得这份工作很值得。第三，我自己也一直在成长，从最初不知道怎么做、笔试考了好几次，到现在我已经能独立组织活动、跟家长顺畅沟通。我想在这个行业继续走下去，做一名正式的幼儿教师。所以虽然我基础不太好，但我愿意学、愿意努力。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">喜欢孩子</span>
+          <span class="tag">有成就感</span>
+          <span class="tag">叠衣服的例子</span>
+          <span class="tag">自己也在成长</span>
+          <span class="tag">愿意学愿意努力</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="additional-3">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">3</span>
+        <span class="q-text">如何做好幼儿园的班级管理工作</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            做好班级管理，我主要靠三点。第一是建立常规，就是从入园开始就要让孩子知道什么时间做什么、怎么做。比如我一开学就会跟孩子们约定好排队的规则、收玩具的规则。常规建立好了，班级就好带了。第二是三位老师配合好，主班老师、配班老师和我之间要分工明确、互相补位。我当保育员的时候会主动配合主班老师，户外活动时帮忙看好孩子的安全，上课时帮忙准备教具。第三是要跟家长建立信任，平时多跟家长沟通孩子的情况，好的坏的都要说，让家长感觉你是在真心关心他的孩子。班级管理不是管孩子一个人，是管好整个班级的秩序和氛围。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">建立常规</span>
+          <span class="tag">三位老师配合</span>
+          <span class="tag">分工明确互相补位</span>
+          <span class="tag">跟家长建立信任</span>
+          <span class="tag">管氛围不是管一个人</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="additional-4">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">4</span>
+        <span class="q-text">如何引导幼儿和其他小朋友建立良好的伙伴关系</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            第一，在平时多创造合作的机会，比如小组合作搭积木、分小组做值日生，让小朋友在合作中学会轮流和分享。第二，教孩子具体的社交语言，比如想加入游戏时可以说"我可以一起玩吗"、不小心碰到别人可以说"对不起"。有些孩子不是不愿意交往，是不知道怎么说。第三，对于内向的孩子，我会先安排他跟一个比较友善温和的孩子一起玩，慢慢建立自信再扩大社交圈。第四，当孩子之间发生矛盾时，我不是简单地批评或者拉走，而是引导他们自己说出感受、协商解决。我在班上观察到，会交往的孩子在幼儿园更快乐、适应得更好，所以帮孩子交朋友也是教育的重要部分。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">创造合作机会</span>
+          <span class="tag">教社交语言</span>
+          <span class="tag">从易到难逐步扩大</span>
+          <span class="tag">矛盾时引导自己解决</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="additional-5">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">5</span>
+        <span class="q-text">有人认为，幼儿园教师相当于看管员，不需要太高的素质。对此，你怎么看</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            我完全不认同这个说法。第一，幼儿园教师面对的是3-6岁最需要精心呵护和科学引导的幼儿，对孩子一生的发展影响很大。第二，一名合格的幼儿教师需要懂儿童心理学、卫生保健知识、游戏设计、音乐舞蹈绘画等专业技能，不是谁都能做的。深圳现在公办园都要求本科学历，说明这个岗位的专业要求越来越高。第三，我自己就有体会，从最初觉得"带孩子谁不会"到后来发现每个孩子都不同，需要不同的方法，不懂专业真的做不好。第四，恰恰相反，幼儿教师应该是素质最高的教师群体之一，因为幼儿的早期教育对一个人的影响太深远了。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">不认同</span>
+          <span class="tag">3-6岁需要科学引导</span>
+          <span class="tag">需要多学科专业知识</span>
+          <span class="tag">深圳要求本科很说明问题</span>
+          <span class="tag">自己从不会到懂的体会</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-id="additional-6">
+      <div class="card-question" onclick="toggleCard(this)">
+        <div class="progress-dot" onclick="event.stopPropagation(); toggleProgress(this)"></div>
+        <span class="q-num">6</span>
+        <span class="q-text">近年来幼儿园安全事故频发。对此，你怎么看</span>
+        <span class="q-arrow">▼</span>
+      </div>
+      <div class="card-answer">
+        <div class="answer-section">
+          <span class="label">💬 参考答案</span>
+          <div class="answer-content">
+            幼儿园安全事故频发确实是一个令人痛心的问题。我认为原因主要有几个方面：第一，部分幼儿园安全意识不足，场地器材存在隐患、安全制度不落实。第二，师幼比例不合理，一个班孩子太多老师顾不过来，容易出意外。第三，个别老师责任心不强，看手机走神、离岗导致孩子受伤。针对这些问题：第一，幼儿园应该建立完善的安全管理制度，定期检查场地器材，定期开展安全演练。第二，政府应该控制班额，让老师能关注到每一个孩子。第三，作为老师自己，我在工作中也非常注意安全，户外活动前先检查器械、活动时把孩子控制在自己的视线范围内、教孩子基本的自我保护意识。安全是幼儿园工作的底线，怎么重视都不为过。
+          </div>
+        </div>
+        <div class="keywords-box">
+          <span class="label">🔑 背诵关键词</span>
+          <span class="tag">安全意识不足</span>
+          <span class="tag">师幼比例不合理</span>
+          <span class="tag">个别老师责任心不强</span>
+          <span class="tag">建章立制</span>
+          <span class="tag">控制班额</span>
+          <span class="tag">老师自己做好</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 第六部分：绘画备考 SVG -->
 <!-- ============================================================ -->
 <div class="section" data-category="drawing">
   <div class="section-header" onclick="toggleSection(this)">
@@ -1488,7 +2090,7 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- 第四部分：结构化答题框架 SVG -->
+<!-- 第七部分：结构化答题框架 SVG -->
 <!-- ============================================================ -->
 <div class="section" data-category="framework">
   <div class="section-header" onclick="toggleSection(this)">
@@ -1639,7 +2241,7 @@
 </div>
 
 <!-- ============================================================ -->
-<!-- 第五部分：每日学习方案 SVG -->
+<!-- 第八部分：每日学习方案 SVG -->
 <!-- ============================================================ -->
 <div class="section" data-category="plan">
   <div class="section-header" onclick="toggleSection(this)">
